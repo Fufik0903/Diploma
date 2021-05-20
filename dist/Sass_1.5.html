@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <link rel="stylesheet" href="../src/scss/style.css">
+</head>
+<body>
+<div class="general">
+  <header class="header__innerAccount">
+    <div class="header__Account">
+      <div class="header__logoAccount">
+        <a href="../aboutSass.html">
+          <img src="../img/logo.svg" class="header__logoImg" alt="">
+        </a>
+      </div>
+      <span class="header__personalAccountTitle">Выйти</span>
+      <button class="header__enterBtn">
+        <img src="../img/Group%202people.svg" alt="">
+      </button>
+    </div>
+  </header>
+  <div class="contentPage">
+    <div class="aboutHTML">
+      <div class="aboutHTML__title"><h1>Расширение/Наследование</h1></div>
+      <div class="aboutHTML__content">
+        <p class="aboutHTML__text">
+          Это одна из самых полезных функций Sass. Используя директиву @extend можно наследовать наборы свойств CSS от одного селектора другому. Это позволяет держать ваш Sass-файл в «чистоте». В нашем примере мы покажем вам как сделать стили оповещений об ошибках, предупреждениях и удачных исходах, используя другие возможности Sass, которые идут рука-об-руку с расширением, классами-шаблонами. Класс-шаблон - особый тип классов, который выводится только при использовании расширения - это позволит сохранить ваш скомпилированный CSS чистым и аккуратным.
+        </p>
+        <img src="../img/Снимок1.6.4.PNG" alt="" class="aboutHTML__img">
+        <p class="aboutHTML__text">
+          Вышеуказанный код сообщает классам .message, .success, .error и .warning вести себя как %message-shared. Это означает, что где бы не вызывался %message-shared, то и .message, .success, .error и .warning тоже будут вызваны. Магия происходит в сгенерированном CSS, где каждый из этих классов получает css-свойства, как и %message-shared. Это позволит вам избежать написания множества классов в HTML элементах.
+        </p>
+        <p class="aboutHTML__text">
+          Вы можете расширить большинство простых CSS селекторов прибавление к классам-шаблонам в Sass, однако, использование шаблонов - простейший способ быть уверенным, что вы не расширяете класс везде, где он используется в ваших стилях, что могло бы привести к непреднамеренным наборам стилей в вашем CSS.
+        </p>
+        <p class="aboutHTML__text">
+          Когда вы генерируете ваш CSS, то он будет выглядеть как пример ниже. Обратите внимание, %equal-heights не попадает в CSS, так как ни разу не был использован.
+        </p>
+        <div class="header__move">
+          <div class="course-nav">
+            <a href="Sass_1.4.html">
+              <img src="../img/back_icon-icons.com_52398.png" alt="" class="header__arrow">
+            </a>
+            <p>Прошлый урок</p>
+          </div>
+          <div class="course-nav">
+            <p>Следующий урок</p>
+            <a href="Sass_1.6.html">
+              <img src="../img/next_icon-icons.com_52398.png" alt="" class="header__arrow">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sideBar">
+      <ul class="aboutHTML__list">
+        <a href="/Sass_1.0.html" class="aboutHTML__link"><li class="aboutHTML__li">Переменные</li></a>
+        <a href="/Sass_1.1.html" class="aboutHTML__link"><li class="aboutHTML__li">Вложенности/Фрагментирование</li></a>
+        <a href="/Sass_1.3.html" class="aboutHTML__link"><li class="aboutHTML__li">Импорт</li></a>
+        <a href="/Sass_1.4.html" class="aboutHTML__link"><li class="aboutHTML__li">Миксины(примеси)</li></a>
+        <a href="/Sass_1.5.html" class="aboutHTML__link"><li class="aboutHTML__li">Расширение/Наследование</li></a>
+        <a href="/Sass_1.6.html" class="aboutHTML__link"><li class="aboutHTML__li">Математические операторы</li></a>
+      </ul>
+    </div>
+  </div>
+  <footer class="footer__innerAccount">
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-contacts">
+          <h1 class="footer-title">Контакты</h1>
+          <div class="footer-contacts-text">
+            <p class="footer-text">Телефон: +7 (900) 622-03-82</p>
+            <p class="footer-text">E-mail: sofia.davidova999@gmail.com</p>
+          </div>
+          <div class="footer-contacts-buttons">
+            <button class="footer-message-button">
+              <img src="../img/whatsapp.svg" alt="" class="footer-message-button">
+            </button>
+            <button class="footer-message-button">
+              <img src="../img/facebook.svg" alt="" class="footer-message-button">
+            </button>
+            <button class="footer-message-button">
+              <img src="../img/instagram.svg" alt="" class="footer-message-button">
+            </button>
+          </div>
+        </div>
+        <div class="footer-question">
+          <h1 class="footer-title">Обратная связь</h1>
+          <form action="" class="form-question">
+            <div class="form-item">
+              <label for="name" class="label-input"></label>
+              <input id="name" class="form-input" type="text" name="name" required="" placeholder="Имя">
+            </div>
+            <div class="form-item">
+              <label for="email" class="label-input"></label>
+              <input id="email" class="form-input" type="text" name="email" required="" placeholder="Email">
+            </div>
+            <div class="form-item">
+              <textarea name="form-messages" id="form-messages" rows="6" placeholder="Введите ваше сообщение"></textarea>
+            </div>
+            <button class="form-button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

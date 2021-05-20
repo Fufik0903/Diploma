@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <link rel="stylesheet" href="../src/scss/style.css">
+</head>
+<body>
+<div class="general">
+  <header class="header__innerAccount">
+    <div class="header__Account">
+      <div class="header__logoAccount">
+        <a href="../aboutCss.html">
+          <img src="../img/logo.svg" class="header__logoImg" alt="">
+        </a>
+      </div>
+      <span class="header__personalAccountTitle">Выйти</span>
+      <button class="header__enterBtn">
+        <img src="../img/Group%202people.svg" alt="">
+      </button>
+    </div>
+  </header>
+  <div class="contentPage">
+    <div class="aboutHTML">
+      <div class="aboutHTML__title"><h1>Селекторы</h1></div>
+      <div class="aboutHTML__content">
+        <p class="aboutHTML__text">
+          Селектор - это часть CSS-правила, которая сообщает браузеру, к какому элементу (или элементам) веб-страницы будет применён стиль.<br><br>
+          Список простых селекторов
+        </p>
+        <table id="selectors">
+          <tbody><tr>
+            <th>CSS&nbsp;селектор</th><th>Пример</th><th>Описание</th><th>CSS</th>
+          </tr>
+          <tr>
+            <td><a href="sel_class.php">.class</a></td>
+            <td><code>.myClass</code></td>
+            <td>Выбирает все элементы с классом myClass (<code>class="myClass"</code>).</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td><a href="sel_id.php">#id</a></td>
+            <td><code>#main</code></td>
+            <td>Выбирает элемент с идентификатором main (<code>id="main"</code>).</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td><a href="sel_all.php">*</a></td>
+            <td><code>*</code></td>
+            <td>Выбор всех элементов.</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td><a href="sel_element.php">элемент</a></td>
+            <td><code>span</code></td>
+            <td>Выбор всех элементов <code>&lt;span&gt;</code>.</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td><a href="sel_element_comma.php">элемент,элемент</a></td>
+            <td><code>div,span</code></td>
+            <td>Выбор всех элементов <code>&lt;div&gt;</code> и всех элементов <code>&lt;span&gt;</code>.</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td><a href="sel_attribute.php">[атрибут]</a></td>
+            <td><code>[title]</code></td>
+            <td>Выбирает все элементы с атрибутом <code>title</code>.</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td><a href="sel_attribute_value.php">[атрибут="значение"]</a></td>
+            <td><code>[title="cost"]</code></td>
+            <td>Выбирает все элементы с атрибутом <code>title</code>, значение которого в точности совпадает со значением указанным в селекторе (<code>title="cost"</code>).</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td><a href="sel_attribute_value_contains.php">[атрибут~="значение"]</a></td>
+            <td><code>[title~="один"]</code></td>
+            <td>Выбирает все элементы с атрибутом <code>title</code>, в значении которого (в любом месте) встречается подстрока (в виде отдельного слова) "один" (<code>title="один и два"</code>).</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td><a href="sel_attribute_value_lang.php">[атрибут|="значение"]</a></td>
+            <td><code>[lang|="ru"]</code></td>
+            <td>Выбор всех элементов с атрибутом <code>lang</code>, значение которого начинается с "ru".</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td><a href="sel_attr_begin.php">[атрибут^="значение"]</a></td>
+            <td><code>a[href^="https"]</code></td>
+            <td>Выбор каждого элемента <code>&lt;a&gt;</code> с атрибутом <code>href</code>, значение которого начинается с "https".</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td><a href="sel_attr_end.php">[атрибут$="значение"]</a></td>
+            <td><code>[src$=".png"]</code></td>
+            <td>Выбирает все элементы с атрибутом <code>src</code>, значение которого оканчивается на ".png" (<code>src="some_img.png"</code>).</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td><a href="sel_attr_contain.php">[атрибут*="значение"]</a></td>
+            <td><code>[title*="один"]</code></td>
+            <td>Выбирает все элементы с атрибутом <code>title</code>, в значении которого (в любом месте) встречается подстрока (в виде отдельного слова или его части) "один" (<code>title="один и два"</code>).</td>
+            <td>3</td>
+          </tr>
+          </tbody>
+        </table>
+        <p class="aboutHTML__text">
+          Составной селектор — это последовательность простых селекторов, которые не разделены комбинаторами, т. е. за одним селектором сразу идёт следующий. Он выбирает элемент, который соответствует всем простым селекторам, которые он содержит. Селектор типа или универсальный селектор, входящий в составной селектор, должен быть расположен первым в этой последовательности. В составном селекторе допустим только один селектор типа или универсальный селектор.<br><br>
+          Сложный селектор — это последовательность селекторов, которые разделены комбинаторами.<br><br>
+          Список селекторов — это селекторы, перечисленные через запятую.
+        </p>
+        <iframe class="aboutHTML__video" src="https://www.youtube.com/embed/bgrJ3Hlx7uo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="header__move">
+          <div class="course-nav">
+            <a href="CSS_1.0.html">
+              <img src="../img/back_icon-icons.com_52398.png" alt="" class="header__arrow">
+            </a>
+            <p>Прошлый урок</p>
+          </div>
+          <div class="course-nav">
+            <p>Следующий урок</p>
+            <a href="CSS_1.2.html">
+              <img src="../img/next_icon-icons.com_52398.png" alt="" class="header__arrow">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sideBar">
+      <ul class="aboutHTML__list">
+        <a href="/CSS_1.0.html" class="linkStyle"><li class="aboutHTML__li">CSS-правила</li></a>
+        <a href="/CSS_1.1.html" class="linkStyle"><li class="aboutHTML__li">Селекторы</li></a>
+        <a href="/CSS_1.2.html" class="linkStyle"><li class="aboutHTML__li">Свойства и значения</li></a>
+        <a href="/CSS_1.3.html" class="linkStyle"><li class="aboutHTML__li">Наследование</li></a>
+      </ul>
+    </div>
+  </div>
+  <footer class="footer__innerAccount">
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-contacts">
+          <h1 class="footer-title">Контакты</h1>
+          <div class="footer-contacts-text">
+            <p class="footer-text">Телефон: +7 (900) 622-03-82</p>
+            <p class="footer-text">E-mail: sofia.davidova999@gmail.com</p>
+          </div>
+          <div class="footer-contacts-buttons">
+            <button class="footer-message-button">
+              <img src="../img/whatsapp.svg" alt="" class="footer-message-button">
+            </button>
+            <button class="footer-message-button">
+              <img src="../img/facebook.svg" alt="" class="footer-message-button">
+            </button>
+            <button class="footer-message-button">
+              <img src="../img/instagram.svg" alt="" class="footer-message-button">
+            </button>
+          </div>
+        </div>
+        <div class="footer-question">
+          <h1 class="footer-title">Обратная связь</h1>
+          <form action="" class="form-question">
+            <div class="form-item">
+              <label for="name" class="label-input"></label>
+              <input id="name" class="form-input" type="text" name="name" required="" placeholder="Имя">
+            </div>
+            <div class="form-item">
+              <label for="email" class="label-input"></label>
+              <input id="email" class="form-input" type="text" name="email" required="" placeholder="Email">
+            </div>
+            <div class="form-item">
+              <textarea name="form-messages" id="form-messages" rows="6" placeholder="Введите ваше сообщение"></textarea>
+            </div>
+            <button class="form-button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

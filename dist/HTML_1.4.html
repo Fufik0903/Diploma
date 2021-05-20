@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <link rel="stylesheet" href="../src/scss/style.css">
+</head>
+<body>
+<div class="general">
+  <header class="header__innerAccount">
+    <div class="header__Account">
+      <div class="header__logoAccount">
+        <a href="../aboutHTML.html">
+          <img src="../img/logo.svg" class="header__logoImg" alt="">
+        </a>
+      </div>
+      <span class="header__personalAccountTitle">Выйти</span>
+      <button class="header__enterBtn">
+        <img src="../img/Group%202people.svg" alt="">
+      </button>
+    </div>
+  </header>
+  <div class="contentPage">
+    <div class="aboutHTML">
+      <div class="aboutHTML__title"><h1>Текст/Списки/Ссылки</h1></div>
+      <div class="aboutHTML__content">
+        <p class="aboutHTML__text-title">
+          Ссылки
+        </p>
+        <p class="aboutHTML__text">
+          Гиперссылки создаются с помощью элемента &lt;a>&lt;/a>. Внутрь помещается текст, который будет отображаться на веб-странице. Текст ссылки отображается в браузере с подчёркиванием, цвет шрифта — синий, при наведении на ссылку курсор мыши меняет вид.<br>
+          Обязательным параметром элемента &lt;a> является атрибут href, который задает URl-адрес веб-страницы.<br>
+        </p>
+        <img src="../img/Снимокlink.PNG" alt="">
+        <p class="aboutHTML__text">
+          Ссылка состоит из двух частей — указателя и адресной части. Указатель ссылки представляет собой фрагмент текста или изображение, видимые для пользователя. Адресная часть ссылки пользователю не видна, она представляет собой адрес ресурса, к которому необходимо перейти.<br>
+          Адресная часть ссылки состоит из URl. URl (Uniform Resource Locator) — унифицированный адрес ресурса. При создании адресов для разделения слов между собой рекомендуется использовать дефис, а не символ подчёркивания. В общем виде URl имеющий следующий формат:
+        </p>
+        <img src="../img/Снимокlinkurl.PNG" alt="">
+        <p class="aboutHTML__text-title">
+          Списки
+        </p>
+        <p class="aboutHTML__text">
+          HTML-списки используются для группировки связанных между собой фрагментов информации. Существует три вида списков:
+          <ol>
+            <li>маркированный список — &lt;ul> — каждый элемент списка &lt;li> отмечается маркером</li>
+            <li>нумерованный список — &lt;ol> — каждый элемент списка &lt;li> отмечается цифрой</li>
+            <li>список определений — &lt;dl> — состоит из пар термин &lt;dt> — &lt;dd> определение</li>
+          </ol>
+        </p>
+        <p class="aboutHTML__text">
+        <ol>
+          <li>Маркированный список представляет собой неупорядоченный список (от англ. Unordered List). Создаётся с помощью элемента &lt;ul>. В качестве маркера элемента списка выступает метка, например, закрашенный кружок.</li>
+          <li>Нумерованный список создаётся с помощью элемента &lt;ol>. Каждый пункт списка также создаётся с помощью элемента &lt;li>. Браузер нумерует элементы по порядку автоматически и если удалить один или несколько элементов такого списка, то остальные номера будут автоматически пересчитаны.</li>
+          <li>Списки определений создаются с помощью элемента &lt;dl>. Для добавления термина применяется элемент &lt;dt>, а для вставки определения — элемент &lt;dd>.</li>
+        </ol>
+        </p>
+        <p class="aboutHTML__text-title">
+          Текст
+        </p>
+        <p class="aboutHTML__text">
+          HTML- текст представлен в спецификации элементами для форматирования и группировки текста. Данные элементы являются контейнерами для текста и не имеют визуального отображения.<br>
+          Элементы для форматирования текста несут смысловую нагрузку и обычно задают для текста, заключенного внутрь, стилевое оформление, например, выделяют текст жирным начертанием или отображают его шрифтом другого семейства (свойство font-family).<br>
+          Грамотно отформатированный текст дает понять поисковым системам, какие слова несут важную смысловую нагрузку, по каким из них предпочтительно ранжировать веб-страницу в поисковой выдаче. Вся текстовая информация, отображаемая на сайте, размещается внутри элемента &lt;body>.<br>
+        </p>
+        <img src="../img/Снимокhq.PNG" alt="">
+        <div class="header__move">
+          <div class="course-nav">
+            <a href="HTML_1.3.html">
+              <img src="../img/back_icon-icons.com_52398.png" alt="" class="header__arrow">
+            </a>
+            <p>Прошлый урок</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sideBar">
+      <ul class="aboutHTML__list">
+        <a href="/HTML_1.0.html" class="aboutHTML__link"><li class="aboutHTML__li">Что такое HTML?</li></a>
+        <a href="/HTML_1.1.html" class="aboutHTML__link"><li class="aboutHTML__li">HTML теги</li></a>
+        <a href="/HTML_1.2.html" class="aboutHTML__link"><li class="aboutHTML__li">Вложенные теги</li></a>
+        <a href="/HTML_1.3.html" class="aboutHTML__link"><li class="aboutHTML__li">Структура</li></a>
+        <a href="/HTML_1.4.html" class="aboutHTML__link"><li class="aboutHTML__li">Текст/Списки/Ссылки</li></a>
+      </ul>
+    </div>
+  </div>
+  <footer class="footer__innerAccount">
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-contacts">
+          <h1 class="footer-title">Контакты</h1>
+          <div class="footer-contacts-text">
+            <p class="footer-text">Телефон: +7 (900) 622-03-82</p>
+            <p class="footer-text">E-mail: sofia.davidova999@gmail.com</p>
+          </div>
+          <div class="footer-contacts-buttons">
+            <button class="footer-message-button">
+              <img src="../img/whatsapp.svg" alt="" class="footer-message-button">
+            </button>
+            <button class="footer-message-button">
+              <img src="../img/facebook.svg" alt="" class="footer-message-button">
+            </button>
+            <button class="footer-message-button">
+              <img src="../img/instagram.svg" alt="" class="footer-message-button">
+            </button>
+          </div>
+        </div>
+        <div class="footer-question">
+          <h1 class="footer-title">Обратная связь</h1>
+          <form action="" class="form-question">
+            <div class="form-item">
+              <label for="name" class="label-input"></label>
+              <input id="name" class="form-input" type="text" name="name" required="" placeholder="Имя">
+            </div>
+            <div class="form-item">
+              <label for="email" class="label-input"></label>
+              <input id="email" class="form-input" type="text" name="email" required="" placeholder="Email">
+            </div>
+            <div class="form-item">
+              <textarea name="form-messages" id="form-messages" rows="6" placeholder="Введите ваше сообщение"></textarea>
+            </div>
+            <button class="form-button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

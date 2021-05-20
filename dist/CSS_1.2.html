@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <link rel="stylesheet" href="../src/scss/style.css">
+</head>
+<body>
+<div class="general">
+  <header class="header__innerAccount">
+    <div class="header__Account">
+      <div class="header__logoAccount">
+        <a href="../aboutCss.html">
+          <img src="../img/logo.svg" class="header__logoImg" alt="">
+        </a>
+      </div>
+      <span class="header__personalAccountTitle">Выйти</span>
+      <button class="header__enterBtn">
+        <img src="../img/Group%202people.svg" alt="">
+      </button>
+    </div>
+  </header>
+  <div class="contentPage">
+    <div class="aboutHTML">
+      <div class="aboutHTML__title"><h1>Свойства и значения</h1></div>
+      <div class="aboutHTML__content">
+        <p class="aboutHTML__text">
+          В этом уроке мы рассмотрим основные CSS-свойства. Для удобства, они будут разложены по категориям.
+        </p>
+        <p class="aboutHTML__text">
+          <ol>
+            <li>CSS-свойства влияющие на цвет и фон</li>
+            <li>CSS-свойства влияющие на шрифт</li>
+            <li>CSS-свойства влияющие на текст</li>
+            <li>CSS-свойства влияющие на границу (обводку)</li>
+            <li>CSS-свойства влияющие на внешние и внутренние отступы</li>
+          </ol>
+        </p>
+        <p class="aboutHTML__text-title">
+          CSS-свойства влияющие на цвет и фон
+        </p>
+        <p class="aboutHTML__text">
+          color: — CSS-свойство влияющее на цвет текста: заголовка, абзаца, ссылки и т.д. В качестве его значения выступает имя цвета или шестнацатеричный код в RGB-формате.<br>
+          Примеры кода с использованием CSS-свойства color:<br>
+          color: green; — текст должен быть зелёного цвета, в качестве значения задано имя цвета,<br>
+          color: #008800; — текст должен быть зелёного цвета, в качестве значения задан шестнадцатеричный код в RGB-формате.<br><br>
+
+          background-color: — CSS-свойство влияющее на цвет фона заголовка, абзаца, ссылки и т.д.<br>
+          В качестве его значения выступает имя цвета или шестнацатеричный код в RGB-формате.<br>
+          Примеры кода с использованием CSS-свойства background-color:<br>
+          background-color: blue; — фон должен быть синего цвета,<br>
+          background-color: #0000ff; — фон должен быть синего цвета.<br><br>
+
+          background-image: — CSS-свойство устанавливающее изображение, в качестве фона фона заголовка, абзаца, ссылки и т.д. Его значением выступает URL (адрес) изображения.<br>
+          Примеры кода с использованием CSS-свойства background-image:<br>
+          background-image: url(http://имя домена.ru/kartinka.jpg); — фоном должно стать изображение, находящееся по адресу http://имя домена.ru/kartinka.jpg<br>
+        </p>
+        <p class="aboutHTML__text-title">
+          CSS-свойства влияющие на шрифт
+        </p>
+        <p class="aboutHTML__text">
+          font-size: — CSS-свойство влияющее на размер шрифта заголовка, абзаца, ссылки и т.д. В качестве его значения выступает единица измерения: пиксель (px), процент (%), пункт (pt) и т.д.<br>
+          Примеры кода с использованием CSS-свойства font-size:<br>
+          font-size: 17px; — размер шрифта должен быть 17 пикселей,<br>
+          font-size: 20pt; — размер шрифта должен быть 20 пунктов.<br><br>
+
+          font-family: — CSS-свойство устанавливающее имя шрифта для заголовка, абзаца, ссылки и т.д. В качестве его значения выступает имя шрифта: Arial, Courier, Impact, Garamond, Georgia, Helvetica, Tahoma, Times (установлен по-умочанию), Verdana и т.д.<br>
+          Примеры кода с использованием CSS-свойства font-family:<br>
+          font-family: Arial; — имя шрифта должно быть Arial,<br>
+          font-family: Impact; — имя шрифта должно Impact.<br>
+          <br>
+          font-style: — CSS-свойство влияющее на начертание (стиль) шрифта заголовка, абзаца, ссылки и т.д. В качестве его значения выступает: normal, oblique.<br>
+          Примеры кода с использованием CSS-свойства font-style:<br>
+          font-style: normal; — нормальное начертание шифта,<br>
+          font-style: oblique; — наклонное начертание шифта.<br>
+          <br>
+          font-weight: — CSS-свойство влияющее на толщину шрифта заголовка, абзаца, ссылки и т.д. В качестве его значения выступет: normal, bold.<br>
+          Примеры кода с использованием CSS-свойства font-weight:<br>
+          font-weight: normal; — нормальное начертание шифта,<br>
+          font-weight: bold; — жирное начертание шифта.<br>
+        </p>
+        <p class="aboutHTML__text-title">
+          CSS-свойства влияющие на текст
+        </p>
+        <p class="aboutHTML__text">
+          text-align: — CSS-свойство влияющее на выравнивание текста в заголовке, абзаце и других блочных элементах. В качестве его значения выступает: left, center, right, justify.<br>
+          Примеры кода с использованием CSS-свойства text-align:<br>
+          text-align: left; — выравнивание текста по левому краю (установлен по-умолчанию),<br>
+          text-align: center; — выравнивание текста по центру,<br>
+          text-align: right; — выравнивание текста по правому краю,<br>
+          text-align: justify; — равномерное выравнивание текста по левому и правому краям.<br>
+          <br>
+          text-indent: — CSS-свойство влияющее на отступ первой строки (красная строка) текста в закаловке, абзаце и других блочных элементах. В качестве его значения выступает единица измерения: пиксель (px), процент (%), пункт (pt) и т.д.<br>
+          Примеры кода с использованием CSS-свойства text-indent:<br>
+          text-indent: 20px; — отступ первой строки равен 20 пикселям,<br>
+          text-indent: 15pt; — отступ первой строки равен 15 пунктам.<br>
+          <br>
+          line-height: — CSS-свойство влияющее на расстояние между строками текста (интерлиньяж) заголовка, абзаца, ссылки и т.д. В качестве его значения выступает единица измерения: множитель, пиксель (px), процент (%), пункт (pt) и т.д.<br>
+          Примеры кода с использованием CSS-свойства text-indent:<br>
+          line-height: 35px; — расстояние между строками равно 35 пикселей,<br>
+          line-height: 1.5; — расстояние между строками равно 1.5 по множителю (аналогичен 150%).<br>
+          <br>
+          letter-spacing: — CSS-свойство влияющее на расстояние между символами в словах заголовка, абзаца ссылки и т.д. В качестве его значения выступает единица измерения: пиксель (px), процент (%), пункт (pt) и т.д.<br>
+          Примеры кода с использованием CSS-свойства letter-spacing:<br>
+          letter-spacing: 3px; — расстояние между символами в словах, равно 3 пикселя,<br>
+          letter-spacing: 5pt; — расстояние между символами в словах, равно 5 пунктов.<br>
+          <br>
+          word-spacing: — CSS-свойство влияющее на расстояние между словами в тексте заголовка, абзаца, ссылки и т.д. В качестве его значения выступает единица измерения: пиксель (px), процент (%), пункт (pt) и т.д.<br>
+          Примеры кода с использованием CSS-свойства word-spacing:<br>
+          word-spacing: 10px; — расстояние между словами, равно 10 пикселей,<br>
+          word-spacing: 7pt; — расстояние между словами, равно 7 пунктов.<br>
+          <br>
+          text-transform: — CSS-свойство влияющее на вид букв в тексте, делая их прописными или строчными. В качестве его значения выступает: capitalize, lowercase, uppercase.<br>
+          Примеры кода с использованием CSS-свойства text-transform:<br>
+          text-transform: capitalize; — первая буква каждого слова начинается с верхнего регистра,<br>
+          text-transform: uppercase; — все буквы в тексте записываются в верхнем регистре,<br>
+          text-transform: lowercase; — все буквы в тексте записываются в нижнем регистре.<br>
+          <br>
+          text-shadow: — CSS-свойство создающее тень текста.<br>
+          В качестве его значения выступает: цвет ось-x ось-y радиус.<br>
+          Пример кода с использованием CSS-свойства text-shadow:<br>
+          text-shadow: green 3px 2px 2px; — тень будет зелёного цвета, со сдвигом в лево на 3 пикселя, со сдвигом вниз на 2 пикселя, радиус (разброс тени) будет составлять 5 пикселей.<br>
+        </p>
+        <p class="aboutHTML__text-title">
+          CSS-свойства влияющие на границу (обводку)
+        </p>
+        <p class="aboutHTML__text">
+          border-color: — CSS-свойство влияющее на цвет границ заголовка, абзаца, ссылки и т.д. В качестве его значения выступает имя цвета или его шестнацатеричный код в RGB-формате.<br>
+          Примеры кода с использованием CSS-свойства border-color:<br>
+          border-color: green; — зелёный цвет обводки,<br>
+          border-color: #008800; — зелёный цвет обводки, задан в шестнадцатеричном коде RGB-формата.<br>
+          <br>
+          border-width: — CSS-свойство влияющее на толщину границ заголовка, абзаца, ссылки и т.д. В качестве его значения выступает единица измерения: пиксель (px).<br>
+          Примеры кода с использованием CSS-свойства border-width:<br>
+          border-width: 1px; — толщина обводки равна 1 пикселю,<br>
+          border-width: 3px; — толщина обводки равна 3 пикселям.<br>
+          <br>
+          border-style: — CSS-свойство влияющее на стиль границ заголовка, абзаца, ссылки и т.д. В качестве его значения выступает: solid, dashed, dotted, double.<br>
+          Примеры кода с использованием CSS-свойства border-style:<br>
+          border-style: solid; — обводка как сплошная линия,<br>
+          border-style: dashed; — обводка в виде отрезков,<br>
+          border-style: dotted; — обводка в виде точек,<br>
+          border-style: double; — обводка в виде двойной сплошной линии.<br>
+        </p>
+        <p class="aboutHTML__text-title">
+          CSS-свойства влияющие на внешние и внутренние отступы
+        </p>
+        <p class="aboutHTML__text">
+          margin: — CSS-свойство влияющее на отступ между краем фона одного блочного элемента (заголовки, абзацы и т.д.) и краем фона другого блочного элемента. В качестве его значения выступает единица измерения: пиксель (px), процент (%), пункт (pt) и т.д.<br>
+          Примеры кода с использованием CSS-свойства margin:<br>
+          margin: 15px; — отступ равен 15 пикселям,<br>
+          margin: 12pt; — отступ равен 12 пунктам.<br>
+          <br>
+          padding: — CSS-свойство влияющее на отступ между краем фона элемента и его содержимым (текстом, изображением). В качестве его значения выступаюет единица измерения: пиксель (px), процент (%), пункт (pt) и т.д.<br>
+          Примеры кода с использованием CSS-свойства padding:<br>
+          padding: 5px; — отступ равен 5 пикселям,<br>
+          padding: 3pt; — отступ равен 3 пунктам.<br>
+        </p>
+        <div class="header__move">
+          <div class="course-nav">
+            <a href="CSS_1.1.html">
+              <img src="../img/back_icon-icons.com_52398.png" alt="" class="header__arrow">
+            </a>
+            <p>Прошлый урок</p>
+          </div>
+
+          <div class="course-nav">
+            <p>Следующий урок</p>
+            <a href="CSS_1.3.html">
+              <img src="../img/next_icon-icons.com_52398.png" alt="" class="header__arrow">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sideBar">
+      <ul class="aboutHTML__list">
+        <a href="/CSS_1.0.html" class="linkStyle"><li class="aboutHTML__li">CSS-правила</li></a>
+        <a href="/CSS_1.1.html" class="linkStyle"><li class="aboutHTML__li">Селекторы</li></a>
+        <a href="/CSS_1.2.html" class="linkStyle"><li class="aboutHTML__li">Свойства и значения</li></a>
+        <a href="/CSS_1.3.html" class="linkStyle"><li class="aboutHTML__li">Наследование</li></a>
+      </ul>
+    </div>
+  </div>
+  <footer class="footer__innerAccount">
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-contacts">
+          <h1 class="footer-title">Контакты</h1>
+          <div class="footer-contacts-text">
+            <p class="footer-text">Телефон: +7 (900) 622-03-82</p>
+            <p class="footer-text">E-mail: sofia.davidova999@gmail.com</p>
+          </div>
+          <div class="footer-contacts-buttons">
+            <button class="footer-message-button">
+              <img src="../img/whatsapp.svg" alt="" class="footer-message-button">
+            </button>
+            <button class="footer-message-button">
+              <img src="../img/facebook.svg" alt="" class="footer-message-button">
+            </button>
+            <button class="footer-message-button">
+              <img src="../img/instagram.svg" alt="" class="footer-message-button">
+            </button>
+          </div>
+        </div>
+        <div class="footer-question">
+          <h1 class="footer-title">Обратная связь</h1>
+          <form action="" class="form-question">
+            <div class="form-item">
+              <label for="name" class="label-input"></label>
+              <input id="name" class="form-input" type="text" name="name" required="" placeholder="Имя">
+            </div>
+            <div class="form-item">
+              <label for="email" class="label-input"></label>
+              <input id="email" class="form-input" type="text" name="email" required="" placeholder="Email">
+            </div>
+            <div class="form-item">
+              <textarea name="form-messages" id="form-messages" rows="6" placeholder="Введите ваше сообщение"></textarea>
+            </div>
+            <button class="form-button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

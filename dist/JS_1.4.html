@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <link rel="stylesheet" href="../src/scss/style.css">
+</head>
+<body>
+<div class="general">
+  <header class="header__innerAccount">
+    <div class="header__Account">
+      <div class="header__logoAccount">
+        <a href="../aboutJavaScript.html">
+          <img src="../img/logo.svg" class="header__logoImg" alt="">
+        </a>
+      </div>
+      <span class="header__personalAccountTitle">Выйти</span>
+      <button class="header__enterBtn">
+        <img src="../img/Group%202people.svg" alt="">
+      </button>
+    </div>
+  </header>
+  <div class="contentPage">
+    <div class="aboutHTML">
+      <div class="aboutHTML__title"><h1>Типы данных</h1></div>
+      <div class="aboutHTML__content">
+        <p class="aboutHTML__text">
+          Значение в JavaScript всегда относится к данным определённого типа. Например, это может быть строка или число.<br>
+          Есть восемь основных типов данных в JavaScript. В этой главе мы рассмотрим их в общем, а в следующих главах поговорим подробнее о каждом.
+        </p>
+        <p class="aboutHTML__text">
+          В JavaScript есть 8 основных типов.
+          <ol>
+            <li>number для любых чисел: целочисленных или чисел с плавающей точкой; целочисленные значения ограничены диапазоном ±(2<sup>53</sup>-1).</li>
+            <li>bigint для целых чисел произвольной длины.</li>
+            <li>string для строк. Строка может содержать ноль или больше символов, нет отдельного символьного типа.</li>
+            <li>boolean для true/false.</li>
+            <li>null для неизвестных значений – отдельный тип, имеющий одно значение null.</li>
+            <li>undefined для неприсвоенных значений – отдельный тип, имеющий одно значение undefined.</li>
+            <li>object для более сложных структур данных.</li>
+            <li>symbol для уникальных идентификаторов.</li>
+          </ol>
+        </p>
+        <p class="aboutHTML__text-title">Число</p>
+        <p class="aboutHTML__text">
+          Числовой тип данных (number) представляет как целочисленные значения, так и числа с плавающей точкой.<br>
+          Существует множество операций для чисел, например, умножение *, деление /, сложение +, вычитание - и так далее.<br>
+          Кроме обычных чисел, существуют так называемые «специальные числовые значения», которые относятся к этому типу данных: Infinity, -Infinity и NaN.<br>
+          Infinity представляет собой математическую бесконечность ∞. Это особое значение, которое больше любого числа.<br>
+          Мы можем получить его в результате деления на ноль или задать его явно:<br>
+        </p>
+        <img src="../img/Снимок333.PNG" alt="" class="aboutHTML__img">
+        <p class="aboutHTML__text">
+          NaN означает вычислительную ошибку. Это результат неправильной или неопределённой математической операции, например:
+        </p>
+        <img src="../img/Снимок555.PNG" alt="" class="aboutHTML__img">
+        <p class="aboutHTML__text">
+          Значение NaN «прилипчиво». Любая операция с NaN возвращает NaN:
+        </p>
+        <img src="../img/Снимок777.PNG" alt="" class="aboutHTML__img">
+        <p class="aboutHTML__text">
+          Если где-то в математическом выражении есть NaN, то результатом вычислений с его участием будет NaN.
+        </p>
+        <p class="aboutHTML__text">
+          Или задать его явно:
+        </p>
+        <p class="aboutHTML__text-title">BigInt</p>
+        <p class="aboutHTML__text">
+          В JavaScript тип «number» не может содержать числа больше, чем (253-1) (т. е. 9007199254740991), или меньше, чем -(253-1) для отрицательных чисел. Это техническое ограничение вызвано их внутренним представлением.<br>
+          Для большинства случаев этого достаточно. Но иногда нам нужны действительно гигантские числа, например, в криптографии или при использовании метки времени («timestamp») с микросекундами.<br>
+          Тип BigInt был добавлен в JavaScript, чтобы дать возможность работать с целыми числами произвольной длины.<br>
+          Чтобы создать значение типа BigInt, необходимо добавить n в конец числового литерала:<br>
+        </p>
+        <img src="../img/Снимок140.PNG" alt="" class="aboutHTML__img">
+        <p class="aboutHTML__text">
+          Так как BigInt-числа нужны достаточно редко, мы рассмотрим их в отдельной главе BigInt. Ознакомьтесь с ней, когда вам понадобятся настолько большие числа.
+        </p>
+        <p class="aboutHTML__text-title">Строка</p>
+        <p class="aboutHTML__text">
+          Строка (string) в JavaScript должна быть заключена в кавычки.
+          <img src="../img/Снимок112.PNG" alt="" class="aboutHTML__img">
+          В JavaScript существует три типа кавычек.<br>
+        <ol>
+          <li>Двойные кавычки: "Привет".</li>
+          <li>Одинарные кавычки: 'Привет'.</li>
+          <li>Обратные кавычки: `Привет`.</li>
+        </ol>
+        </p>
+        <p class="aboutHTML__text">
+          Двойные или одинарные кавычки являются «простыми», между ними нет разницы в JavaScript.<br>
+          Обратные же кавычки имеют расширенную функциональность. Они позволяют нам встраивать выражения в строку, заключая их в `$`{…}. Например:<br>
+        </p>
+        <img src="../img/Снимок222.PNG" alt="" class="aboutHTML__img">
+        <p class="aboutHTML__text">
+          Выражение внутри `$`{…} вычисляется, и его результат становится частью строки. Мы можем положить туда всё, что угодно: переменную name, или выражение 1 + 2, или что-то более сложное.<br>
+          Обратите внимание, что это можно делать только в обратных кавычках. Другие кавычки не имеют такой функциональности встраивания!<br>
+        </p>
+
+        <p class="aboutHTML__text-title">Булевый (логический) тип</p>
+        <p class="aboutHTML__text">
+          Булевый тип (boolean) может принимать только два значения: true (истина) и false (ложь).<br>
+          Такой тип, как правило, используется для хранения значений да/нет: true значит «да, правильно», а false значит «нет, не правильно».<br>
+          Например:<br>
+          <img src="../img/Снимок117.PNG" alt="" class="aboutHTML__img">
+        <p class="aboutHTML__text">Булевые значения также могут быть результатом сравнений:</p>
+        <img src="../img/Снимок118.PNG" alt="" class="aboutHTML__img">
+        </p>
+        <p class="aboutHTML__text-title">Значение «null»</p>
+        <p class="aboutHTML__text">
+          Специальное значение null не относится ни к одному из типов, описанных выше.<br>
+          Оно формирует отдельный тип, который содержит только значение null:<br>
+          <img src="../img/Снимок113.PNG" alt="" class="aboutHTML__img">
+          В JavaScript null не является «ссылкой на несуществующий объект» или «нулевым указателем», как в некоторых других языках.<br>
+          Это просто специальное значение, которое представляет собой «ничего», «пусто» или «значение неизвестно».<br>
+          В приведённом выше коде указано, что значение переменной age неизвестно.<br>
+        </p>
+        <p class="aboutHTML__text-title">Значение «undefined»</p>
+        <p class="aboutHTML__text">
+          Специальное значение undefined также стоит особняком. Оно формирует тип из самого себя так же, как и null.<br>
+          Оно означает, что «значение не было присвоено».<br>
+          Если переменная объявлена, но ей не присвоено никакого значения, то её значением будет undefined:<br>
+          <img src="../img/Снимок114.PNG" alt="" class="aboutHTML__img">
+          Технически мы можем присвоить значение undefined любой переменной:<br>
+          <img src="../img/Снимок115.PNG" alt="" class="aboutHTML__img">
+          …Но так делать не рекомендуется. Обычно null используется для присвоения переменной «пустого» или «неизвестного» значения, а undefined – для проверок, была ли переменная назначена.<br>
+        </p>
+        <p class="aboutHTML__text-title">Объекты и символы</p>
+        <p class="aboutHTML__text">
+          Тип object (объект) – особенный.<br>
+          Все остальные типы называются «примитивными», потому что их значениями могут быть только простые значения (будь то строка, или число, или что-то ещё). В объектах же хранят коллекции данных или более сложные структуры.<br>
+          Объекты занимают важное место в языке и требуют особого внимания. Мы разберёмся с ними в главе Объекты после того, как узнаем больше о примитивах.<br>
+          Тип symbol (символ) используется для создания уникальных идентификаторов в объектах. Мы упоминаем здесь о нём для полноты картины, изучим этот тип после объектов.<br>
+        </p>
+        <p class="aboutHTML__text-title">Оператор typeof</p>
+        <p class="aboutHTML__text">
+          Оператор typeof возвращает тип аргумента. Это полезно, когда мы хотим обрабатывать значения различных типов по-разному или просто хотим сделать проверку.<br>
+          У него есть две синтаксические формы:<br>
+          <ol>
+            <li>Синтаксис оператора: typeof x.</li>
+            <li>Синтаксис функции: typeof(x).</li>
+          </ol>
+        <p class="aboutHTML__text">
+          Другими словами, он работает со скобками или без скобок. Результат одинаковый.<br>
+          Вызов typeof x возвращает строку с именем типа:<br>
+          <img src="../img/Снимок116.PNG" alt="" class="aboutHTML__img">
+          Последние три строки нуждаются в пояснении:<br>
+        </p>
+            <ol>
+              <li>Math — это встроенный объект, который предоставляет математические операции и константы. Мы рассмотрим его подробнее в главе Числа. Здесь он служит лишь примером объекта.</li>
+              <li>Результатом вызова typeof null является "object". Это официально признанная ошибка в typeof, ведущая начало с времён создания JavaScript и сохранённая для совместимости. Конечно, null не является объектом. Это специальное значение с отдельным типом.</li>
+              <li>Вызов typeof alert возвращает "function", потому что alert является функцией. Мы изучим функции в следующих главах, где заодно увидим, что в JavaScript нет специального типа «функция». Функции относятся к объектному типу. Но typeof обрабатывает их особым образом, возвращая "function". Так тоже повелось от создания JavaScript. Формально это неверно, но может быть удобным на практике.</li>
+            </ol>
+        </p>
+        <div class="header__move">
+          <div class="course-nav">
+            <a href="JS_1.3.html">
+              <img src="../img/back_icon-icons.com_52398.png" alt="" class="header__arrow">
+            </a>
+            <p>Прошлый урок</p>
+          </div>
+
+          <div class="course-nav">
+            <p>Следующий урок</p>
+            <a href="JS_1.5.html">
+              <img src="../img/next_icon-icons.com_52398.png" alt="" class="header__arrow">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sideBar">
+      <ul class="aboutHTML__list">
+        <a href="/JS_1.0.html" class="aboutHTML__link"><li class="aboutHTML__li">Hello World!</li></a>
+        <a href="/JS_1.1.html" class="aboutHTML__link"><li class="aboutHTML__li">Структура кода</li></a>
+        <a href="/JS_1.2.html" class="aboutHTML__link"><li class="aboutHTML__li">Строгий режимм "use strict"</li></a>
+        <a href="/JS_1.3.html" class="aboutHTML__link"><li class="aboutHTML__li">Переменные</li></a>
+        <a href="/JS_1.4.html" class="aboutHTML__link"><li class="aboutHTML__li">Типы данных</li></a>
+        <a href="/JS_1.5.html" class="aboutHTML__link"><li class="aboutHTML__li">Преобразование типов</li></a>
+      </ul>
+    </div>
+  </div>
+  <footer class="footer__innerAccount">
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-contacts">
+          <h1 class="footer-title">Контакты</h1>
+          <div class="footer-contacts-text">
+            <p class="footer-text">Телефон: +7 (900) 622-03-82</p>
+            <p class="footer-text">E-mail: sofia.davidova999@gmail.com</p>
+          </div>
+          <div class="footer-contacts-buttons">
+            <button class="footer-message-button">
+              <img src="../img/whatsapp.svg" alt="" class="footer-message-button">
+            </button>
+            <button class="footer-message-button">
+              <img src="../img/facebook.svg" alt="" class="footer-message-button">
+            </button>
+            <button class="footer-message-button">
+              <img src="../img/instagram.svg" alt="" class="footer-message-button">
+            </button>
+          </div>
+        </div>
+        <div class="footer-question">
+          <h1 class="footer-title">Обратная связь</h1>
+          <form action="" class="form-question">
+            <div class="form-item">
+              <label for="name" class="label-input"></label>
+              <input id="name" class="form-input" type="text" name="name" required="" placeholder="Имя">
+            </div>
+            <div class="form-item">
+              <label for="email" class="label-input"></label>
+              <input id="email" class="form-input" type="text" name="email" required="" placeholder="Email">
+            </div>
+            <div class="form-item">
+              <textarea name="form-messages" id="form-messages" rows="6" placeholder="Введите ваше сообщение"></textarea>
+            </div>
+            <button class="form-button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

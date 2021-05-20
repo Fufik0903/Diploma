@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <link rel="stylesheet" href="../src/scss/style.css">
+</head>
+<body>
+<div class="general">
+  <header class="header__innerAccount">
+    <div class="header__Account">
+      <div class="header__logoAccount">
+        <a href="../aboutGit.html">
+          <img src="../img/logo.svg" class="header__logoImg" alt="">
+        </a>
+      </div>
+      <span class="header__personalAccountTitle">Выйти</span>
+      <button class="header__enterBtn">
+        <img src="../img/Group%202people.svg" alt="">
+      </button>
+    </div>
+  </header>
+  <div class="contentPage">
+    <div class="aboutHTML">
+      <div class="aboutHTML__title"><h1>Получение репозитория Git</h1></div>
+      <div class="aboutHTML__content">
+        <p class="aboutHTML__text">
+          В этой главе рассматриваются все основные команды, необходимые для выполнения подавляющего большинства вещей,
+          которые вы в конечном итоге потратите на Git. К концу главы вы должны быть в состоянии настроить и
+          инициализировать репозиторий, начать и остановить отслеживание файлов, а также этапировать и фиксировать изменения.
+        </p>
+        <p class="aboutHTML__text-title">
+          Получение репозитория Git
+        </p>
+        <p class="aboutHTML__text">
+          Обычно вы получаете репозиторий Git одним из двух способов:
+          <ol>
+            <li>Вы можете взять локальный каталог, который в настоящее время не находится под контролем версий, и превратить его в репозиторий Git, или</li>
+            <li>Вы можете клонировать существующий репозиторий Git из другого места.</li>
+          </ol>
+        </p>
+        <p class="aboutHTML__text-title">
+          Инициализация репозитория в существующем каталоге
+        </p>
+        <p class="aboutHTML__text">
+          Если у вас есть каталог проекта, который в настоящее время не находится под контролем версий,
+          и вы хотите начать управлять им с помощью Git, вам сначала нужно перейти в каталог этого проекта.
+          Если вы никогда этого не делали, это выглядит немного по-другому в зависимости от того, какая система
+          у вас работает:
+        </p>
+        <p class="aboutHTML__text">
+          для Windows: $ cd C:/Users/user/my_project и тип: $ git init
+        </p>
+        <p class="aboutHTML__text">
+          Это создает новый подкаталог с именем.git, который содержит все необходимые файлы
+          репозитория — скелет репозитория Git. На данный момент в вашем проекте еще ничего не отслеживается.
+          Дополнительные сведения о том, какие именно файлы содержатся в .gitтолько что созданном каталоге.
+        </p>
+        <p class="aboutHTML__text">
+          Если вы хотите начать управление версиями существующих файлов (в отличие от пустого каталога), вам, вероятно,
+          следует начать отслеживать эти файлы и сделать начальную фиксацию.
+          Вы можете сделать это с помощью нескольких git addкоманд, которые указывают файлы,
+          которые вы хотите отслеживать, а затем git commit:
+        </p>
+        <img src="../img/Снимок5.PNG" alt="" class="aboutHTML__img">
+        <p class="aboutHTML__text-title">
+          Клонирование существующего репозитория
+        </p>
+        <p class="aboutHTML__text">
+          Если вы хотите получить копию существующего репозитория Git — например, проект,
+          в который вы хотели бы внести свой вклад, — вам нужна команда git clone.
+          Если вы знакомы с другими VCSS, такими как Subversion, вы заметите, что команда "clone", а не "checkout".
+          Это важное различие — вместо того, чтобы получить только рабочую копию, Git получает полную копию
+          почти всех данных, которые есть на сервере. Каждая версия каждого файла для истории проекта по умолчанию
+          удаляется при запуске git clone На самом деле, если ваш серверный диск поврежден, вы часто можете
+          использовать почти любой из клонов на любом клиенте, чтобы вернуть сервер в то состояние, в котором он был
+          при клонировании (вы можете потерять некоторые серверные крючки и тому подобное, но все версионные данные
+          будут там.
+        </p>
+        <p class="aboutHTML__text">
+          Вы клонируете репозиторий с git clone &lt;url>помощью . Например, если вы хотите клонировать вызванную
+          библиотеку Git linkable libgit2, вы можете сделать это следующим образом:
+        </p>
+        <p class="aboutHTML__text">
+          $ git clone https://github.com/libgit2/libgit2
+        </p>
+        <p class="aboutHTML__text">
+          Это создает каталог с именем libgit2, инициализирует .git каталог внутри него,
+          извлекает все данные для этого хранилища и проверяет рабочую копию последней версии.
+          Если вы перейдете в новый libgit2каталог, который только что был создан, вы увидите там файлы проекта,
+          готовые к работе или использованию.
+        </p>
+        <p class="aboutHTML__text">
+          Если вы хотите клонировать репозиторий в каталог с другим именем libgit2, вы можете указать новое имя каталога в качестве дополнительного аргумента:
+        </p>
+        <p class="aboutHTML__text">
+          $ git clone https://github.com/libgit2/libgit2 mylibgit
+        </p>
+        <p class="aboutHTML__text">
+          Эта команда делает то же самое, что и предыдущая, но вызывается целевой каталог mylibgit.
+        </p>
+        <div class="header__move">
+          <div class="course-nav">
+            <a href="Git_1.4.html">
+              <img src="../img/back_icon-icons.com_52398.png" alt="" class="header__arrow">
+            </a>
+            <p>Прошлый урок</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sideBar">
+      <ul class="aboutHTML__list">
+        <a href="/Git_1.0.html" class="aboutHTML__link"><li class="aboutHTML__li">О контроле верисий</li></a>
+        <a href="/Git_1.1.html" class="aboutHTML__link"><li class="aboutHTML__li">Что такое Git</li></a>
+        <a href="/Git_1.2.html" class="aboutHTML__link"><li class="aboutHTML__li">Командная строка</li></a>
+        <a href="/Git_1.3.html" class="aboutHTML__link"><li class="aboutHTML__li">Установка Git</li></a>
+        <a href="/Git_1.4.html" class="aboutHTML__link"><li class="aboutHTML__li">Первая настройка Git</li></a>
+        <a href="/Git_1.5.html" class="aboutHTML__link"><li class="aboutHTML__li">Получение репозитория Git</li></a>
+      </ul>
+    </div>
+  </div>
+  <footer class="footer__innerAccount">
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-contacts">
+          <h1 class="footer-title">Контакты</h1>
+          <div class="footer-contacts-text">
+            <p class="footer-text">Телефон: +7 (900) 622-03-82</p>
+            <p class="footer-text">E-mail: sofia.davidova999@gmail.com</p>
+          </div>
+          <div class="footer-contacts-buttons">
+            <button class="footer-message-button">
+              <img src="../img/whatsapp.svg" alt="" class="footer-message-button">
+            </button>
+            <button class="footer-message-button">
+              <img src="../img/facebook.svg" alt="" class="footer-message-button">
+            </button>
+            <button class="footer-message-button">
+              <img src="../img/instagram.svg" alt="" class="footer-message-button">
+            </button>
+          </div>
+        </div>
+        <div class="footer-question">
+          <h1 class="footer-title">Обратная связь</h1>
+          <form action="" class="form-question">
+            <div class="form-item">
+              <label for="name" class="label-input"></label>
+              <input id="name" class="form-input" type="text" name="name" required="" placeholder="Имя">
+            </div>
+            <div class="form-item">
+              <label for="email" class="label-input"></label>
+              <input id="email" class="form-input" type="text" name="email" required="" placeholder="Email">
+            </div>
+            <div class="form-item">
+              <textarea name="form-messages" id="form-messages" rows="6" placeholder="Введите ваше сообщение"></textarea>
+            </div>
+            <button class="form-button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

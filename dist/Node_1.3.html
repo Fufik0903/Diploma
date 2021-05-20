@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <link rel="stylesheet" href="../src/scss/style.css">
+</head>
+<body>
+<div class="general">
+  <header class="header__innerAccount">
+    <div class="header__Account">
+      <div class="header__logoAccount">
+        <a href="../aboutNodeJS.html">
+          <img src="../img/logo.svg" class="header__logoImg" alt="">
+        </a>
+      </div>
+      <span class="header__personalAccountTitle">Выйти</span>
+      <button class="header__enterBtn">
+        <img src="../img/Group%202people.svg" alt="">
+      </button>
+    </div>
+  </header>
+  <div class="contentPage">
+    <div class="aboutHTML">
+      <div class="aboutHTML__title"><h1>Модуль Express для node.js</h1></div>
+      <div class="aboutHTML__content">
+        <p class="aboutHTML__text">
+          Express — это фреймворк, который облегчит создание большинства обычных сайтов. Сперва вам будет необходимо установить его. Вместе с командой node у вас будет доступ к команде “npm”. Этот инструмент даёт доступ к огромному количеству модулей, созданных сообществом, в том числе и Express.
+        </p>
+        <img src="../img/Снимок1.3.1.PNG" alt="" class="aboutHTML__img">
+        <p class="aboutHTML__text">
+          Когда вы установите модуль, он будет положен в папку node_modules в директории вашего приложения. Теперь вы сможете использовать его функциональность так, как будто он встроен.
+        </p>
+        <img src="../img/Снимок1.3.2.PNG" alt="" class="aboutHTML__img">
+        <p class="aboutHTML__text">
+          Теперь у вас есть довольно умелый статический файловый сервер. Всё, что вы положили в папку public, может быть запрошено и показано браузером: HTML, картинки, почти всё, что угодно. Так, например, если вы положите картинку под названием “my_image.png” внутрь папки public, вы можете открыть картинку прямо в браузере, перейдя по адресу http://localhost:8080/my_image.png. Конечно, Express имеет довольно обширную функциональность, и вы можете изучить её в ходе разработки.
+        </p>
+        <p class="aboutHTML__text-title">
+          NPM
+        </p>
+        <p class="aboutHTML__text">
+          Мы чуть-чуть затронули NPM в предыдущей секции, но мы хотели бы подчеркнуть, как важен этот инструмент при обычной разработке в Node.js. Тысячи модулей доступны для решения почти всех типичных проблем, с которыми вы, вероятно, можете столкнуться. Помните, что стоит проверить NPM прежде, чем изобретать велосипед. Для типичного приложения на node.js характерно иметь множество подключенных модулей.
+        </p>
+        <p class="aboutHTML__text">
+          В предыдущем примере мы вручную установили Express. Если у вас много подключенных библиотек, устанавливать их все вряд ли будет хорошей затеей. Поэтому npm использует файл package.json.
+        </p>
+        <img src="../img/Снимок1.3.3.PNG" alt="" class="aboutHTML__img">
+        <p class="aboutHTML__text">
+          Файл package.json содержит обзор вашего приложения. Здесь много доступных полей, но представлен необходимый минимум. Секция “dependency” описывает название и версию модулей, которые вы бы хотели установить. В данном случае мы принимаем любую версию Express.3.3. В данной секции вы можете перечислить столько библиотек, сколько вам угодно.
+        </p>
+        <p class="aboutHTML__text">
+          Теперь вместо того, чтобы устанавливать каждую библиотеку отдельно, мы можем запустить одну команду и установить всё необходимое одним махом.
+        </p>
+        <img src="../img/Снимок1.3.4.PNG" alt="" class="aboutHTML__img">
+        <p class="aboutHTML__text">
+          Когда вы запустите команду, npm будет искать в текущей папке файл package.json. Если найдет, то установит каждую библиотеку из списка.
+        </p>
+        <div class="header__move">
+          <div class="course-nav">
+            <a href="Node_1.2.html">
+              <img src="../img/back_icon-icons.com_52398.png" alt="" class="header__arrow">
+            </a>
+            <p>Прошлый урок</p>
+          </div>
+
+          <div class="course-nav">
+            <p>Следующий урок</p>
+            <a href="Node_1.4.html">
+              <img src="../img/next_icon-icons.com_52398.png" alt="" class="header__arrow">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sideBar">
+      <ul class="aboutHTML__list">
+        <a href="/Node_1.0.html" class="aboutHTML__link"><li class="aboutHTML__li">Краткая теория</li></a>
+        <a href="/Node_1.1.html" class="aboutHTML__link"><li class="aboutHTML__li">Устанавливаем Node</li></a>
+        <a href="/Node_1.2.html" class="aboutHTML__link"><li class="aboutHTML__li">Веб-сервер с помощью node.js</li></a>
+        <a href="/Node_1.3.html" class="aboutHTML__link"><li class="aboutHTML__li">Модуль Express для node.js</li></a>
+        <a href="/Node_1.4.html" class="aboutHTML__link"><li class="aboutHTML__li">Организация кода в node.js</li></a>
+      </ul>
+    </div>
+  </div>
+  <footer class="footer__innerAccount">
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-contacts">
+          <h1 class="footer-title">Контакты</h1>
+          <div class="footer-contacts-text">
+            <p class="footer-text">Телефон: +7 (900) 622-03-82</p>
+            <p class="footer-text">E-mail: sofia.davidova999@gmail.com</p>
+          </div>
+          <div class="footer-contacts-buttons">
+            <button class="footer-message-button">
+              <img src="../img/whatsapp.svg" alt="" class="footer-message-button">
+            </button>
+            <button class="footer-message-button">
+              <img src="../img/facebook.svg" alt="" class="footer-message-button">
+            </button>
+            <button class="footer-message-button">
+              <img src="../img/instagram.svg" alt="" class="footer-message-button">
+            </button>
+          </div>
+        </div>
+        <div class="footer-question">
+          <h1 class="footer-title">Обратная связь</h1>
+          <form action="" class="form-question">
+            <div class="form-item">
+              <label for="name" class="label-input"></label>
+              <input id="name" class="form-input" type="text" name="name" required="" placeholder="Имя">
+            </div>
+            <div class="form-item">
+              <label for="email" class="label-input"></label>
+              <input id="email" class="form-input" type="text" name="email" required="" placeholder="Email">
+            </div>
+            <div class="form-item">
+              <textarea name="form-messages" id="form-messages" rows="6" placeholder="Введите ваше сообщение"></textarea>
+            </div>
+            <button class="form-button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

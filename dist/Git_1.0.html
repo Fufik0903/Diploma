@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <link rel="stylesheet" href="../src/scss/style.css">
+</head>
+<body>
+<div class="general">
+  <header class="header__innerAccount">
+    <div class="header__Account">
+      <div class="header__logoAccount">
+        <a href="../aboutGit.html">
+          <img src="../img/logo.svg" class="header__logoImg" alt="">
+        </a>
+      </div>
+      <span class="header__personalAccountTitle">Выйти</span>
+      <button class="header__enterBtn">
+        <img src="../img/Group%202people.svg" alt="">
+      </button>
+    </div>
+  </header>
+  <div class="contentPage">
+    <div class="aboutHTML">
+      <div class="aboutHTML__title"><h1>О контроле версий</h1></div>
+      <div class="aboutHTML__content">
+        <p class="aboutHTML__text">
+          Что такое “контроль версий”, и почему это должно вас волновать? Управление версиями-это система,
+          которая записывает изменения в файл или набор файлов с течением времени, чтобы вы могли вспомнить определенные версии позже.
+          Для примеров в этой книге вы будете использовать исходный код программного обеспечения в качестве файлов,
+          контролируемых версией, хотя на самом деле вы можете сделать это почти с любым типом файлов на компьютере.
+        </p>
+        <p class="aboutHTML__text">
+          Если вы графический или веб-дизайнер и хотите сохранить каждую версию изображения или макета (а вы наверняка этого захотите),
+          то очень разумно использовать Систему контроля версий (VCS). Он позволяет вернуть выбранные файлы в предыдущее состояние,
+          вернуть весь проект в предыдущее состояние, сравнить изменения с течением времени, посмотреть, кто в последний раз изменял то,
+          что могло вызвать проблему, кто и когда ввел проблему, и многое другое. Использование VCS также обычно означает,
+          что если вы что-то испортите или потеряете файлы, то сможете легко восстановить их.
+        </p>
+        <p class="aboutHTML__text-title">
+          Локальные Системы Контроля Версий
+        </p>
+        <p class="aboutHTML__text">
+          Многие люди предпочитают копировать файлы в другой каталог (возможно, каталог с отметкой времени, если они умны).
+          Этот подход очень распространен, потому что он очень прост, но он также невероятно подвержен ошибкам.
+          Легко забыть, в каком каталоге вы находитесь, и случайно записать не в тот файл или скопировать файлы, которые вы не хотели.
+        </p>
+        <p class="aboutHTML__text">
+          Чтобы справиться с этой проблемой, программисты давно разработали локальные VCSS, которые имели простую базу данных,
+          которая держала все изменения в файлах под контролем версий.
+        </p>
+        <img src="../img/local.png" alt="" class="aboutHTML__img">
+        <p class="aboutHTML__text">
+          Одним из самых популярных инструментов VCS была система под названием RCS,
+          которая до сих пор распространяется со многими компьютерами. RCS работает,
+          сохраняя наборы патчей (то есть различия между файлами) в специальном формате на диске;
+          затем он может воссоздать то, как выглядел любой файл в любой момент времени, сложив все патчи.
+        </p>
+        <p class="aboutHTML__text-title">
+          Централизованные Системы Контроля Версий
+        </p>
+        <p class="aboutHTML__text">
+          Следующая серьезная проблема, с которой сталкиваются люди, заключается в том,
+          что им необходимо сотрудничать с разработчиками других систем.
+          Для решения этой проблемы были разработаны Централизованные системы контроля версий (CVCSs).
+          Эти системы (такие как CVS, Subversion и Perforce) имеют один сервер, который содержит все версионные файлы,
+          и несколько клиентов, которые проверяют файлы из этого центрального места.
+          В течение многих лет это было стандартом для контроля версий.
+        </p>
+        <img src="../img/centralized.png" alt="" class="aboutHTML__img">
+        <p class="aboutHTML__text">
+          Эта установка предлагает много преимуществ, особенно по сравнению с локальными VCSS.
+          Например, каждый в определенной степени знает, что делают все остальные участники проекта.
+          Администраторы имеют четкий контроль над тем, кто что может сделать, и гораздо проще администрировать CVC,
+          чем иметь дело с локальными базами данных на каждом клиенте.
+        </p>
+        <p class="aboutHTML__text">
+          Однако эта установка также имеет некоторые серьезные недостатки.
+          Наиболее очевидной является единственная точка отказа, которую представляет собой централизованный сервер.
+          Если этот сервер отключается на час, то в течение этого часа никто вообще не может сотрудничать или сохранять
+          версионные изменения во всем, над чем они работают. Если жесткий диск, на котором находится центральная база данных,
+          будет поврежден, а соответствующие резервные копии не будут сохранены, вы потеряете абсолютно все — всю историю проекта,
+          за исключением отдельных снимков, которые люди случайно имеют на своих локальных машинах. Локальные венчурные фонды страдают
+          от той же проблемы — всякий раз, когда у вас есть вся история проекта в одном месте, вы рискуете потерять все.
+        </p>
+        <p class="aboutHTML__text-title">
+          Распределенные Системы Контроля Версий
+        </p>
+        <p class="aboutHTML__text">
+          Именно здесь вступают в игру распределенные системы управления версиями (DVCSs).
+          В DVCS (таких как Git, Mercurial, Bazaar или Darcs) клиенты не просто проверяют последний снимок файлов;
+          скорее, они полностью отражают репозиторий, включая его полную историю. Таким образом, если какой-либо сервер умирает,
+          и эти системы сотрудничали через этот сервер, любой из клиентских репозиториев может быть скопирован обратно на сервер,
+          чтобы восстановить его. Каждый клон-это действительно полная резервная копия всех данных.
+        </p>
+        <img src="../img/distributed.png" alt="" class="aboutHTML__img">
+        <div class="header__move">
+          <div class="course-nav">
+            <a href="aboutGit.html">
+              <img src="../img/back_icon-icons.com_52398.png" alt="" class="header__arrow">
+            </a>
+            <p>Прошлый урок</p>
+          </div>
+
+          <div class="course-nav">
+            <p>Следующий урок</p>
+            <a href="Git_1.1.html">
+              <img src="../img/next_icon-icons.com_52398.png" alt="" class="header__arrow">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sideBar">
+      <ul class="aboutHTML__list">
+        <a href="/Git_1.0.html" class="aboutHTML__link"><li class="aboutHTML__li">О контроле верисий</li></a>
+        <a href="/Git_1.1.html" class="aboutHTML__link"><li class="aboutHTML__li">Что такое Git</li></a>
+        <a href="/Git_1.2.html" class="aboutHTML__link"><li class="aboutHTML__li">Командная строка</li></a>
+        <a href="/Git_1.3.html" class="aboutHTML__link"><li class="aboutHTML__li">Установка Git</li></a>
+        <a href="/Git_1.4.html" class="aboutHTML__link"><li class="aboutHTML__li">Первая настройка Git</li></a>
+        <a href="/Git_1.5.html" class="aboutHTML__link"><li class="aboutHTML__li">Получение репозитория Git</li></a>
+      </ul>
+    </div>
+  </div>
+  <footer class="footer__innerAccount">
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-contacts">
+          <h1 class="footer-title">Контакты</h1>
+          <div class="footer-contacts-text">
+            <p class="footer-text">Телефон: +7 (900) 622-03-82</p>
+            <p class="footer-text">E-mail: sofia.davidova999@gmail.com</p>
+          </div>
+          <div class="footer-contacts-buttons">
+            <button class="footer-message-button">
+              <img src="../img/whatsapp.svg" alt="" class="footer-message-button">
+            </button>
+            <button class="footer-message-button">
+              <img src="../img/facebook.svg" alt="" class="footer-message-button">
+            </button>
+            <button class="footer-message-button">
+              <img src="../img/instagram.svg" alt="" class="footer-message-button">
+            </button>
+          </div>
+        </div>
+        <div class="footer-question">
+          <h1 class="footer-title">Обратная связь</h1>
+          <form action="" class="form-question">
+            <div class="form-item">
+              <label for="name" class="label-input"></label>
+              <input id="name" class="form-input" type="text" name="name" required="" placeholder="Имя">
+            </div>
+            <div class="form-item">
+              <label for="email" class="label-input"></label>
+              <input id="email" class="form-input" type="text" name="email" required="" placeholder="Email">
+            </div>
+            <div class="form-item">
+              <textarea name="form-messages" id="form-messages" rows="6" placeholder="Введите ваше сообщение"></textarea>
+            </div>
+            <button class="form-button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
