@@ -346,41 +346,6 @@ module.exports = {
       template: './src/HTML/HTML_1.4.html',
       chunks: ['HTML_1.4.html']
     }),
-    new HtmlWebpackPlugin({
-      filename: 'HTML_1.5.html',
-      template: './src/HTML/HTML_1.5.html',
-      chunks: ['HTML_1.5.html']
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'HTML_1.6.html',
-      template: './src/HTML/HTML_1.6.html',
-      chunks: ['HTML_1.6.html']
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'HTML_1.7.html',
-      template: './src/HTML/HTML_1.7.html',
-      chunks: ['HTML_1.7.html']
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'HTML_1.8.html',
-      template: './src/HTML/HTML_1.8.html',
-      chunks: ['HTML_1.8.html']
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'HTML_1.9.html',
-      template: './src/HTML/HTML_1.9.html',
-      chunks: ['HTML_1.9.html']
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'HTML_1.10.html',
-      template: './src/HTML/HTML_1.10.html',
-      chunks: ['HTML_1.10.html']
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'HTML_1.11.html',
-      template: './src/HTML/HTML_1.11.html',
-      chunks: ['HTML_1.11.html']
-    }),
     //HTML_test
     new HtmlWebpackPlugin({
       filename: 'HTML_test.html',
