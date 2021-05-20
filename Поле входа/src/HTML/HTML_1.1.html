@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <link rel="stylesheet" href="../src/scss/style.css">
+</head>
+<body>
+<div class="general">
+  <header class="header__innerAccount">
+    <div class="header__Account">
+      <div class="header__logoAccount">
+        <a href="../aboutHTML.html">
+          <img src="../img/logo.svg" class="header__logoImg" alt="">
+        </a>
+      </div>
+      <span class="header__personalAccountTitle">Выйти</span>
+      <button class="header__enterBtn">
+        <img src="../img/Group%202people.svg" alt="">
+      </button>
+    </div>
+  </header>
+  <div class="contentPage">
+    <div class="aboutHTML">
+      <div class="aboutHTML__title"><h1>HTML теги</h1></div>
+      <div class="aboutHTML__content">
+        <p class="aboutHTML__text">
+          HTML-теги — основа языка HTML. Теги используются для разграничения начала и конца элементов в разметке.<br><br>
+          Каждый HTML-документ состоит из дерева HTML-элементов и текста. Каждый HTML-элемент обозначается начальным (открывающим) и конечным (закрывающим) тегом. Открывающий и закрывающий теги содержат имя тега.<br><br>
+          Все HTML-элементы делятся на пять типов:<br><br>
+          <ol>
+            <li>пустые элементы — &lt;area>, &lt;base>, &lt;br>, &lt;col>, &lt;embed>, &lt;hr>, &lt;img>,&lt;input>, &lt;link>,
+              &lt;menuitem>, &lt;meta>, &lt;param>, &lt;source>, &lt;track>, &lt;wbr></li>
+            <li>элементы с неформатированным текстом — &lt;script>, &lt;style></li>
+            <li>элементы, выводящие неформатированный текст </li>
+            <li>элементы из другого пространства имён — MathML и SVG;</li>
+            <li>обычные элементы — все остальные элементы</li>
+          </ol>
+        </p>
+        <table class="t3">
+          <caption>Таблица 1. HTML-элементы</caption>
+          <tbody><tr>
+            <th style="width: 20%;">Тег</th>
+            <th>Описание</th>
+          </tr>
+          <tr>
+            <td><kbd>&lt;!--...--&gt;</kbd></td>
+            <td>Используется для добавления комментариев.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;!DOCTYPE&gt;</kbd></td>
+            <td>Объявляет тип&nbsp;документа и предоставляет основную информацию для браузера — его язык и версия.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;a&gt;</kbd></td>
+            <td>Создаёт гипертекстовые ссылки.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;abbr&gt;</kbd></td>
+            <td>Определяет текст как аббревиатуру или акроним. Поясняющий текст задаётся с помощью атрибута <kbd>title</kbd>.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;address&gt;</kbd></td>
+            <td>Задает контактные данные автора/владельца документа или статьи. Отображается в браузере курсивом.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;area&gt;</kbd></td>
+            <td>Представляет собой гиперссылку с текстом, соответствующей определенной области на карте-изображении или активную область внутри карты-изображения. Всегда вложен внутрь тега <kbd>&lt;map&gt;</kbd>.</td>
+          </tr>
+          <tr>
+            <td><kbd style="color: #38bac7;">&lt;article&gt;</kbd></td>
+            <td>Раздел контента, который образует независимую часть документа или сайта, например, статья в журнале, запись в блоге, комментарий.</td>
+          </tr>
+          <tr>
+            <td><kbd style="color: #38bac7;">&lt;aside&gt;</kbd></td>
+            <td>Представляет контент страницы, который имеет косвенное отношение к основному контенту страницы/сайта.</td>
+          </tr>
+          <tr>
+            <td><kbd style="color: #38bac7;">&lt;audio&gt;</kbd></td>
+            <td>Загружает звуковой контент на веб-страницу.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;b&gt;</kbd></td>
+            <td>Задает полужирное начертание отрывка текста, не придавая акцент или важность выделенному.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;base&gt;</kbd></td>
+            <td>Задает базовый адрес (URL), относительно которого вычисляются все относительные адреса. Это поможет избежать проблем при переносе страницы в другое место, так как все ссылки будут работать, как и прежде.</td>
+          </tr>
+          <tr>
+            <td><kbd style="color: #38bac7;">&lt;bdi&gt;</kbd></td>
+            <td>Изолирует отрывок текста, написанный на языке, в котором чтение текста происходит справа налево, от остального текста.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;bdo&gt;</kbd></td>
+            <td>Отображает текст в направлении, указанном в атрибуте <kbd>dir</kbd>, переопределяя текущее направление написания текста.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;blockquote&gt;</kbd></td>
+            <td>Выделяет текст как цитату, применяется для описания больших цитат.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;body&gt;</kbd></td>
+            <td>Представляет тело документа (содержимое, не относящееся к метаданным документа).</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;br&gt;</kbd></td>
+            <td>Перенос текста на новую строку.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;button&gt;</kbd></td>
+            <td>Создает интерактивную кнопку. Внутрь тега можно поместить содержимое — текст или изображение.</td>
+          </tr>
+          <tr>
+            <td><kbd style="color: #38bac7;">&lt;canvas&gt;</kbd></td>
+            <td>Холст-контейнер для динамического отображения изображений, таких как простые изображения, диаграммы, графики и т.п. Для рисования используется скриптовый язык JavaScript.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;caption&gt;</kbd></td>
+            <td>Добавляет подпись к таблице. Вставляется сразу после тега <kbd>&lt;table&gt;</kbd>.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;cite&gt;</kbd></td>
+            <td>Используется для указания источника цитирования. Отображается курсивом.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;code&gt;</kbd></td>
+            <td>Представляет фрагмент программного кода, отображается шрифтом семейства <kbd>monospace</kbd>.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;col&gt;</kbd></td>
+            <td>Выбирает для форматирования один или несколько столбцов таблицы, не содержащих информацию одного типа.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;colgroup&gt;</kbd></td>
+            <td>Создает структурную группу столбцов, выделяющую множество логически однородных ячеек.</td>
+          </tr>
+          <tr>
+            <td><kbd style="color: #38bac7;">&lt;data&gt;</kbd></td>
+            <td>Элемент используется для связывания значения атрибута <kbd>value</kbd>, которое представлено в машиночитаемом формате и может быть обработано компьютером, с содержимым тега.</td>
+          </tr>
+          <tr>
+            <td><kbd style="color: #38bac7;">&lt;datalist&gt;</kbd></td>
+            <td>Элемент-контейнер для выпадающего списка элемента <kbd>&lt;input&gt;</kbd>. Варианты значений помещаются в элементы&nbsp;<kbd>&lt;option&gt;</kbd>.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;dd&gt;</kbd></td>
+            <td>Используется для описания термина из тега <kbd>&lt;dt&gt;</kbd>.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;del&gt;</kbd></td>
+            <td>Помечает текст как удаленный, перечёркивая его.</td>
+          </tr>
+          <tr>
+            <td><kbd style="color: #38bac7;">&lt;details&gt;</kbd></td>
+            <td>Создаёт интерактивный виджет, который пользователь может открыть или закрыть. Представляет собой контейнер для контента, видимый заголовок виджета помещается в тег <kbd>&lt;summary&gt;</kbd>.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;dfn&gt;</kbd></td>
+            <td>Определяет слово как термин, выделяя его курсивом. Текст, идущий следом, должен содержать расшифровку этого термина.</td>
+          </tr>
+          <tr>
+            <td><kbd style="color: #38bac7;">&lt;dialog&gt;</kbd></td>
+            <td>Интерактивный элемент, с которым взаимодействует пользователь для выполнения задачи, например, диалоговое окно, инспектор или окно. Без атрибута <kbd>open</kbd> не виден для пользователя.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;div&gt;</kbd></td>
+            <td>Тег-контейнер для разделов&nbsp;HTML-документа. Используется для группировки блочных элементов с целью форматирования стилями.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;dl&gt;</kbd></td>
+            <td>Тег-контейнер, внутри которого находятся термин и его описание.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;dt&gt;</kbd></td>
+            <td>Используется для задания термина.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;em&gt;</kbd></td>
+            <td>Выделяет важные фрагменты текста, отображая их курсивом.</td>
+          </tr>
+          <tr>
+            <td><kbd style="color: #38bac7;">&lt;embed&gt;</kbd></td>
+            <td>Тег-контейнер для встраивания внешнего интерактивного контента или плагина.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;fieldset&gt;</kbd></td>
+            <td>Группирует связанные элементы в форме, рисуя рамку вокруг них.</td>
+          </tr>
+          <tr>
+            <td><kbd style="color: #38bac7;">&lt;figcaption&gt;</kbd></td>
+            <td>Заголовок/подпись для элемента <kbd>&lt;figure&gt;</kbd>.</td>
+          </tr>
+          <tr>
+            <td><kbd style="color: #38bac7;">&lt;figure&gt;</kbd></td>
+            <td>Самодостаточный тег-контейнер для такого контента как иллюстрации, диаграммы, фотографии, примеры кода, обычно с подписью.</td>
+          </tr>
+          <tr>
+            <td><kbd style="color: #38bac7;">&lt;footer&gt;</kbd></td>
+            <td>Определяет завершающую область (нижний колонтитул) документа или раздела.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;form&gt;</kbd></td>
+            <td>Форма для сбора и отправки на сервер информации от пользователей. Не работает без атрибута <kbd>action</kbd>.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;h1-h6&gt;</kbd></td>
+            <td>Создают заголовки шести уровней для связанных с ними разделов.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;head&gt;</kbd></td>
+            <td>Элемент-контейнер для метаданных HTML-документа, таких как <kbd>&lt;title&gt;</kbd>, <kbd>&lt;meta&gt;</kbd>, <kbd>&lt;script&gt;</kbd>, <kbd>&lt;link&gt;</kbd>, <kbd>&lt;style&gt;</kbd>.</td>
+          </tr>
+          <tr>
+            <td><kbd style="color: #38bac7;">&lt;header&gt;</kbd></td>
+            <td>Секция&nbsp;для вводной информации сайта или группы навигационных ссылок. Может содержать один или несколько заголовков, логотип, информацию об авторе.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;hr&gt;</kbd></td>
+            <td>Горизонтальная линия для тематического разделения параграфов.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;html&gt;</kbd></td>
+            <td>Корневой элемент HTML-документа. Сообщает браузеру, что это HTML-документ. Является контейнером для всех остальных html-элементов.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;i&gt;</kbd></td>
+            <td>Выделяет отрывок текста курсивом, не придавая ему дополнительный акцент.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;iframe&gt;</kbd></td>
+            <td>Создает встроенный фрейм, загружая в текущий HTML-документ другой документ.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;img&gt;</kbd></td>
+            <td>Встраивает изображения в HTML-документ с помощью атрибута <kbd>src</kbd>, значением которого является адрес встраиваемого изображения.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;input&gt;</kbd></td>
+            <td>Создает многофункциональные поля формы, в которые пользователь может вводить данные.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;ins&gt;</kbd></td>
+            <td>Выделяет текст подчеркиванием. Применяется для выделения изменений, вносимых в документ.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;kbd&gt;</kbd></td>
+            <td>Выделяет текст, который должен быть введён пользователем с клавиатуры, шрифтом семейства monospace.</td>
+          </tr>
+          <tr>
+
+            <td><kbd>&lt;label&gt;</kbd></td>
+
+
+
+            <td>Добавляет текстовую метку для элемента <kbd>&lt;input&gt;</kbd>.</td>
+
+          </tr>
+
+
+
+
+          <tr>
+
+            <td><kbd>&lt;legend&gt;</kbd></td>
+
+
+
+            <td>Заголовок элементов формы, сгруппированных с помощью элемента <kbd>&lt;fieldset&gt;</kbd>.</td>
+
+          </tr>
+
+
+
+
+          <tr>
+
+            <td><kbd>&lt;li&gt;</kbd></td>
+
+
+
+            <td>Элемент маркированного или нумерованного списка.</td>
+
+          </tr>
+
+
+
+
+          <tr>
+
+            <td><kbd>&lt;link&gt;</kbd></td>
+
+
+
+            <td>Определяет отношения между документом и внешним ресурсом. Также используется для подключения внешних таблиц стилей.</td>
+
+          </tr>
+
+
+
+
+          <tr>
+
+            <td><kbd style="color: #38bac7;">&lt;main&gt;</kbd></td>
+
+
+
+            <td>Контейнер для основного уникального содержимого документа. На одной странице должно быть не более одного элемента <kbd>&lt;main&gt;</kbd>.</td>
+
+          </tr>
+
+
+
+
+          <tr>
+
+            <td><kbd>&lt;map&gt;</kbd></td>
+
+
+
+            <td>Создаёт активные области на карте-изображении. Является контейнером для элементов <kbd>&lt;area&gt;</kbd>.</td>
+
+          </tr>
+
+
+
+
+          <tr>
+
+            <td><kbd style="color: #38bac7;">&lt;mark&gt;</kbd></td>
+
+
+
+            <td>Выделяет фрагменты текста, помечая их желтым фоном.</td>
+
+          </tr>
+
+
+          <!--
+
+          <tr>
+
+          <td><kbd>&lt;menu&gt;</kbd></td>
+
+
+
+          <td>Определяет список меню/команд, добавляемых с помощью элементов <kbd>&lt;li&gt;</kbd>. Используется для контекстных меню, панели инструментов и для включения элементов управления формы и команд.</td>
+
+          </tr>
+
+          -->
+          <!-- Quick Adsense WordPress Plugin: http://quickadsense.com/ -->
+
+
+          <tr>
+            <td><kbd>&lt;meta&gt;</kbd></td>
+            <td>Используется для хранения дополнительной информации о странице. Эту информацию используют браузеры для обработки страницы, а поисковые системы — для ее индексации. В блоке <kbd>&lt;head&gt;</kbd> может быть несколько тегов <kbd>&lt;meta&gt;</kbd>, так как в зависимости от используемых атрибутов они несут разную информацию.</td>
+          </tr>
+          <tr>
+            <td><kbd style="color: #38bac7;">&lt;meter&gt;</kbd></td>
+            <td>Индикатор&nbsp;измерения в заданном диапазоне.</td>
+          </tr>
+          <tr>
+            <td><kbd style="color: #38bac7;">&lt;nav&gt;</kbd></td>
+            <td>Раздел документа, содержащий навигационные ссылки по сайту.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;noscript&gt;</kbd></td>
+            <td>Определяет секцию, не поддерживающую сценарий (скрипт).</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;object&gt;</kbd></td>
+            <td>Контейнер для встраивания мультимедиа (например, аудио, видео, Java-апплеты, ActiveX, PDF и Flash). Также можно вставить другую веб-страницу в текущий HTML-документ. Для передачи параметров встраиваемого плагина используется тег <kbd>&lt;param&gt;</kbd>.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;ol&gt;</kbd></td>
+            <td>Упорядоченный нумерованный список. Нумерация может быть числовая или алфавитная.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;optgroup&gt;</kbd></td>
+            <td>Контейнер с заголовком для группы элементов <kbd>&lt;option&gt;</kbd>.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;option&gt;</kbd></td>
+            <td>Определяет вариант/опцию для выбора в раскрывающемся списке <kbd>&lt;select&gt;</kbd>, <kbd>&lt;optgroup&gt;</kbd> или <kbd>&lt;datalist&gt;</kbd>.</td>
+          </tr>
+          <tr>
+            <td><kbd style="color: #38bac7;">&lt;output&gt;</kbd></td>
+            <td>Поле для вывода&nbsp;результата вычисления, рассчитанного с помощью скрипта.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;p&gt;</kbd></td>
+            <td>Параграфы в тексте.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;param&gt;</kbd></td>
+            <td>Определяет параметры для плагинов, встраиваемых с помощью элемента <kbd>&lt;object&gt;</kbd>.</td>
+          </tr>
+          <tr>
+            <td><kbd style="color: #38bac7;">&lt;picture&gt;</kbd></td>
+            <td>Элемент-контейнер, содержащий один элемент <kbd>&lt;img&gt;</kbd> и ноль или несколько элементов <kbd>&lt;source&gt;</kbd>. Сам по себе ничего не отображает. Дает возможность браузеру выбирать наиболее подходящее изображение.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;pre&gt;</kbd></td>
+            <td>Выводит текст без форматирования, с сохранением пробелов и переносов текста. Может быть использован для отображения компьютерного кода, сообщения электронной почты и т.д.</td>
+          </tr>
+          <tr>
+            <td><kbd style="color: #38bac7;">&lt;progress&gt;</kbd></td>
+            <td>Индикатор&nbsp;выполнения задачи любого рода.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;q&gt;</kbd></td>
+            <td>Определяет краткую цитату.</td>
+          </tr>
+          <tr>
+            <td><kbd style="color: #38bac7;">&lt;ruby&gt;</kbd></td>
+            <td>Контейнер для&nbsp;Восточно-Азиатских символов и их расшифровки.</td>
+          </tr>
+          <tr>
+            <td><kbd style="color: #38bac7;">&lt;rb&gt;</kbd></td>
+            <td>Определяет вложенный в него текст как базовый компонент аннотации.</td>
+          </tr>
+          <tr>
+            <td><kbd style="color: #38bac7;">&lt;rt&gt;</kbd></td>
+            <td>Добавляет краткую характеристику сверху или снизу от символов, заключенных в элементе <kbd>&lt;ruby&gt;</kbd>, выводится уменьшенным шрифтом.</td>
+          </tr>
+          <tr>
+            <td><kbd style="color: #38bac7;">&lt;rtc&gt;</kbd></td>
+            <td>Отмечает вложенный в него текст как дополнительную аннотацию.</td>
+          </tr>
+          <tr>
+            <td><kbd style="color: #38bac7;">&lt;rp&gt;</kbd></td>
+            <td>Выводит альтернативный текст в случае если браузер не поддерживает элемент &lt;ruby&gt;.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;s&gt;</kbd></td>
+            <td>Отображает текст, не являющийся актуальным, перечеркнутым.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;samp&gt;</kbd></td>
+            <td>Используется для вывода текста, представляющего результат выполнения программного кода или скрипта, а также системные сообщения. Отображается моноширинным шрифтом.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;script&gt;</kbd></td>
+            <td>Используется для определения сценария на стороне клиента (обычно JavaScript). Содержит либо текст скрипта, либо указывает на внешний файл сценария с помощью атрибута <kbd>src</kbd>.</td>
+          </tr>
+          <tr>
+            <td><kbd style="color: #38bac7;">&lt;section&gt;</kbd></td>
+            <td>Определяет логическую область (раздел) страницы, обычно с заголовком.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;select&gt;</kbd></td>
+            <td>Элемент управления, позволяющий выбирать значения из предложенного множества. Варианты значений помещаются в&nbsp;<kbd>&lt;option&gt;</kbd>.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;small&gt;</kbd></td>
+            <td>Отображает текст шрифтом меньшего размера.</td>
+          </tr>
+          <tr>
+            <td><kbd style="color: #38bac7;">&lt;source&gt;</kbd></td>
+            <td>Указывает местоположение и тип альтернативных медиаресурсов для элементов <kbd>&lt;picture&gt;</kbd>, <kbd>&lt;video&gt;</kbd>, <kbd>&lt;audio&gt;</kbd>.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;span&gt;</kbd></td>
+            <td>Контейнер для строчных элементов. Можно использовать для форматирования отрывков текста, например, выделения цветом отдельных слов.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;strong&gt;</kbd></td>
+            <td>Расставляет акценты в тексте, выделяя полужирным.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;style&gt;</kbd></td>
+            <td>Подключает встраиваемые таблицы стилей.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;sub&gt;</kbd></td>
+            <td>Задает подстрочное написание символов, например, индекса элемента в химических формулах.</td>
+          </tr>
+          <tr>
+            <td><kbd style="color: #38bac7;">&lt;summary&gt;</kbd></td>
+            <td>Создаёт видимый заголовок для тега <kbd>&lt;details&gt;</kbd>. Отображается с закрашенным треугольником, кликнув по которому можно просмотреть подробности заголовка.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;sup&gt;</kbd></td>
+            <td>Задает надстрочное написание символов.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;table&gt;</kbd></td>
+            <td>Тег для создания таблицы.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;tbody&gt;</kbd></td>
+            <td>Определяет тело таблицы.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;td&gt;</kbd></td>
+            <td>Создает ячейку таблицы.</td>
+          </tr>
+          <tr>
+            <td><kbd style="color: #38bac7;">&lt;template&gt;</kbd></td>
+            <td>Используется для объявления фрагментов HTML-кода, которые могут быть клонированы и вставлены в документ скриптом. Содержимое тега не является его дочерним элементом.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;textarea&gt;</kbd></td>
+            <td>Создает большие поля для ввода текста.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;tfoot&gt;</kbd></td>
+            <td>Определяет нижний колонтитул таблицы.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;th&gt;</kbd></td>
+            <td>Создает заголовок ячейки таблицы.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;thead&gt;</kbd></td>
+            <td>Определяет заголовок таблицы.</td>
+          </tr>
+          <tr>
+            <td><kbd style="color: #38bac7;">&lt;time&gt;</kbd></td>
+            <td>Определяет дату/время.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;title&gt;</kbd></td>
+            <td>Заголовок HTML-документа, отображаемый в верхней части строки заголовка браузера. Также может отображаться в результатах поиска, поэтому это следует принимать во внимание предоставление названия.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;tr&gt;</kbd></td>
+            <td>Создает строку таблицы.</td>
+          </tr>
+          <tr>
+            <td><kbd style="color: #38bac7;">&lt;track&gt;</kbd></td>
+            <td>Добавляет субтитры для элементов <kbd>&lt;audio&gt;</kbd> и <kbd>&lt;video&gt;</kbd>.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;u&gt;</kbd></td>
+            <td>Выделяет отрывок текста подчёркиванием, без дополнительного акцента.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;ul&gt;</kbd></td>
+            <td>Создает маркированный список.</td>
+          </tr>
+          <tr>
+            <td><kbd>&lt;var&gt;</kbd></td>
+            <td>Выделяет переменные из программ, отображая их курсивом.</td>
+          </tr>
+          <tr>
+            <td><kbd style="color: #38bac7;">&lt;video&gt;</kbd></td>
+            <td>Добавляет на страницу видео-файлы. Поддерживает 3 видео формата: MP4, WebM, Ogg.</td>
+          </tr>
+          <tr>
+            <td><kbd style="color: #38bac7;">&lt;wbr&gt;</kbd></td>
+            <td>Указывает браузеру возможное место разрыва длинной строки.</td>
+          </tr>
+          </tbody>
+        </table>
+        <div class="header__move">
+          <div class="course-nav">
+            <a href="HTML_1.0.html">
+              <img src="../img/back_icon-icons.com_52398.png" alt="" class="header__arrow">
+            </a>
+            <p>Прошлый урок</p>
+          </div>
+          <div class="course-nav">
+            <p>Следующий урок</p>
+            <a href="HTML_1.2.html">
+              <img src="../img/next_icon-icons.com_52398.png" alt="" class="header__arrow">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sideBar">
+      <ul class="aboutHTML__list">
+        <a href="/HTML_1.0.html" class="aboutHTML__link"><li class="aboutHTML__li">Что такое HTML?</li></a>
+        <a href="/HTML_1.1.html" class="aboutHTML__link"><li class="aboutHTML__li">HTML теги</li></a>
+        <a href="/HTML_1.2.html" class="aboutHTML__link"><li class="aboutHTML__li">Вложенные теги</li></a>
+        <a href="/HTML_1.3.html" class="aboutHTML__link"><li class="aboutHTML__li">Структура</li></a>
+        <a href="/HTML_1.4.html" class="aboutHTML__link"><li class="aboutHTML__li">Текст/Списки/Ссылки</li></a>
+      </ul>
+    </div>
+  </div>
+  <footer class="footer__innerAccount">
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-contacts">
+          <h1 class="footer-title">Контакты</h1>
+          <div class="footer-contacts-text">
+            <p class="footer-text">Телефон: +7 (900) 622-03-82</p>
+            <p class="footer-text">E-mail: sofia.davidova999@gmail.com</p>
+          </div>
+          <div class="footer-contacts-buttons">
+            <button class="footer-message-button">
+              <img src="../img/whatsapp.svg" alt="" class="footer-message-button">
+            </button>
+            <button class="footer-message-button">
+              <img src="../img/facebook.svg" alt="" class="footer-message-button">
+            </button>
+            <button class="footer-message-button">
+              <img src="../img/instagram.svg" alt="" class="footer-message-button">
+            </button>
+          </div>
+        </div>
+        <div class="footer-question">
+          <h1 class="footer-title">Обратная связь</h1>
+          <form action="" class="form-question">
+            <div class="form-item">
+              <label for="name" class="label-input"></label>
+              <input id="name" class="form-input" type="text" name="name" required="" placeholder="Имя">
+            </div>
+            <div class="form-item">
+              <label for="email" class="label-input"></label>
+              <input id="email" class="form-input" type="text" name="email" required="" placeholder="Email">
+            </div>
+            <div class="form-item">
+              <textarea name="form-messages" id="form-messages" rows="6" placeholder="Введите ваше сообщение"></textarea>
+            </div>
+            <button class="form-button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

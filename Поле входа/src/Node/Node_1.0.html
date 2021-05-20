@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <link rel="stylesheet" href="../src/scss/style.css">
+</head>
+<body>
+<div class="general">
+  <header class="header__innerAccount">
+    <div class="header__Account">
+      <div class="header__logoAccount">
+        <a href="../aboutNodeJS.html">
+          <img src="../img/logo.svg" class="header__logoImg" alt="">
+        </a>
+      </div>
+      <span class="header__personalAccountTitle">Выйти</span>
+      <button class="header__enterBtn">
+        <img src="../img/Group%202people.svg" alt="">
+      </button>
+    </div>
+  </header>
+  <div class="contentPage">
+    <div class="aboutHTML">
+      <div class="aboutHTML__title"><h1>Краткая теория</h1></div>
+      <div class="aboutHTML__content">
+        <p class="aboutHTML__text">
+          Node.js — среда выполнения кода JavaScript вне браузера. Эта платформа позволяет писать серверный
+          код для динамических веб-страниц и веб-приложений, а также для программ командной строки.
+          С помощью Node.js реализуется парадигма «JavaScript для всего». Она предполагает использование одного
+          языка программирования для разработки веб-приложений вместо применения разных языков для работы над
+          фронтендом и бэкендом.
+        </p>
+        <p class="aboutHTML__text">
+          Node.js — не отдельный язык программирования, а платформа для использования JavaScript на стороне сервера.
+          Если говорить о языке, то как для фронденда, так и для бэкенда используется один и тот же JavaScript.
+          Разница только в наборе API, которые используют фронтендеры и бэкендеры.
+        </p>
+        <p class="aboutHTML__text">
+          Браузерный JavaScript использует Web API, которые обеспечивают доступ к DOM и пользовательскому интерфейсу страниц
+          и веб-приложений. Серверный JavaScript использует API, обеспечивающие доступ к файловой системе приложений,
+          http-запросам, потокам.
+        </p>
+        <p class="aboutHTML__text">
+          То есть Node.js — это технология для использования JS на бэкенде.
+          С особенностями и перспективами развития языка JavaScript можно ознакомиться в соответствующей статье,
+          а здесь речь идёт об одной из технологий данного языка.
+        </p>
+        <div class="header__move">
+          <div class="course-nav">
+            <a href="aboutNodeJS.html">
+              <img src="../img/back_icon-icons.com_52398.png" alt="" class="header__arrow">
+            </a>
+            <p>Прошлый урок</p>
+          </div>
+
+          <div class="course-nav">
+            <p>Следующий урок</p>
+            <a href="Node_1.1.html">
+              <img src="../img/next_icon-icons.com_52398.png" alt="" class="header__arrow">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sideBar">
+      <ul class="aboutHTML__list">
+        <a href="/Node_1.0.html" class="aboutHTML__link"><li class="aboutHTML__li">Краткая теория</li></a>
+        <a href="/Node_1.1.html" class="aboutHTML__link"><li class="aboutHTML__li">Устанавливаем Node</li></a>
+        <a href="/Node_1.2.html" class="aboutHTML__link"><li class="aboutHTML__li">Веб-сервер с помощью node.js</li></a>
+        <a href="/Node_1.3.html" class="aboutHTML__link"><li class="aboutHTML__li">Модуль Express для node.js</li></a>
+        <a href="/Node_1.4.html" class="aboutHTML__link"><li class="aboutHTML__li">Организация кода в node.js</li></a>
+      </ul>
+    </div>
+  </div>
+  <footer class="footer__innerAccount">
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-contacts">
+          <h1 class="footer-title">Контакты</h1>
+          <div class="footer-contacts-text">
+            <p class="footer-text">Телефон: +7 (900) 622-03-82</p>
+            <p class="footer-text">E-mail: sofia.davidova999@gmail.com</p>
+          </div>
+          <div class="footer-contacts-buttons">
+            <button class="footer-message-button">
+              <img src="../img/whatsapp.svg" alt="" class="footer-message-button">
+            </button>
+            <button class="footer-message-button">
+              <img src="../img/facebook.svg" alt="" class="footer-message-button">
+            </button>
+            <button class="footer-message-button">
+              <img src="../img/instagram.svg" alt="" class="footer-message-button">
+            </button>
+          </div>
+        </div>
+        <div class="footer-question">
+          <h1 class="footer-title">Обратная связь</h1>
+          <form action="" class="form-question">
+            <div class="form-item">
+              <label for="name" class="label-input"></label>
+              <input id="name" class="form-input" type="text" name="name" required="" placeholder="Имя">
+            </div>
+            <div class="form-item">
+              <label for="email" class="label-input"></label>
+              <input id="email" class="form-input" type="text" name="email" required="" placeholder="Email">
+            </div>
+            <div class="form-item">
+              <textarea name="form-messages" id="form-messages" rows="6" placeholder="Введите ваше сообщение"></textarea>
+            </div>
+            <button class="form-button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

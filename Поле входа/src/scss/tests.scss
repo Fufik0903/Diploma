@@ -1,0 +1,89 @@
+.testContainer{
+  margin: 30px auto;
+  max-width: 600px;
+}
+body {
+  font-family: Open Sans;
+}
+
+h1 {
+  text-align: center;
+}
+
+#title {
+  padding-top: 20px;
+}
+
+#quiz {
+  text-indent: 10px;
+  display:none;
+}
+.button-container{
+  display: flex;
+  justify-content: flex-end;
+}
+.button {
+  border:none;
+  outline: none;
+  border-radius:5px;
+  width: 150px;
+  padding:10px;
+  background-color: #0c0886;
+  margin: 0 2px 20px 20px;
+  text-align: center;
+}
+
+.button.active {
+  background-color: #26a910;
+  color: #525252;
+}
+
+button {
+  position: relative;
+  float:right;
+}
+
+.button a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+}
+
+#container {
+  width:50%;
+  margin:auto;
+  padding: 0 25px 40px 25px;
+  background-color: #dfe6ec;
+  border:4px solid #B0E0E6;
+  border-radius:5px;
+  color: #06174a;
+  font-weight: bold;
+  box-shadow: 5px 5px 5px #888;
+}
+h2{
+  font-size: 2em;
+}
+p{
+  font-size: 1.8em;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+li{
+  padding-bottom: 20px;
+  font-size: 1.5em;
+}
+#prev {
+  display:none;
+}
+
+#start {
+  display:none;
+}
+input[type="radio"]{
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+}

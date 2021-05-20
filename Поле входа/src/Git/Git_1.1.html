@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <link rel="stylesheet" href="../src/scss/style.css">
+</head>
+<body>
+<div class="general">
+  <header class="header__innerAccount">
+    <div class="header__Account">
+      <div class="header__logoAccount">
+        <a href="../aboutGit.html">
+          <img src="../img/logo.svg" class="header__logoImg" alt="">
+        </a>
+      </div>
+      <span class="header__personalAccountTitle">Выйти</span>
+      <button class="header__enterBtn">
+        <img src="../img/Group%202people.svg" alt="">
+      </button>
+    </div>
+  </header>
+  <div class="contentPage">
+    <div class="aboutHTML">
+      <div class="aboutHTML__title"><h1>Что такое Git</h1></div>
+      <div class="aboutHTML__content">
+        <p class="aboutHTML__text">
+          Итак, что же такое Git в двух словах?
+          Это важный раздел для усвоения, потому что если вы понимаете, что такое Git и основы его работы,
+          то эффективное использование Git, вероятно, будет намного проще для вас. Изучая Git,
+          постарайтесь очистить свой разум от того, что вы можете знать о других VCSS, таких как CVS,
+          Subversion или Perforce — это поможет вам избежать тонкой путаницы при использовании инструмента.
+          Несмотря на то, что пользовательский интерфейс Git довольно похож на эти другие VCSS,
+          Git хранит и думает об информации совсем по-другому, и понимание этих различий поможет вам избежать путаницы
+          при ее использовании.
+        </p>
+        <p class="aboutHTML__text-title">
+          Снимки, А Не Различия
+        </p>
+        <p class="aboutHTML__text">
+          Основное различие между Git и любыми другими VCS (включая Subversion и friends) заключается в том,
+          как Git думает о своих данных. Концептуально большинство других систем хранят информацию в виде списка
+          изменений на основе файлов. Эти другие системы (CVS, Subversion, Perforce, Bazaar и т. Д.)
+          рассматривают информацию, которую они хранят, как набор файлов и изменения, вносимые в каждый файл
+          с течением времени (это обычно описывается как дельта-контроль версий).
+        </p>
+        <img src="../img/deltas.png" alt="" class="aboutHTML__img">
+        <p class="aboutHTML__text">
+          Git не думает и не хранит свои данные таким образом.
+          Вместо этого Git думает о своих данных скорее как о серии снимков миниатюрной файловой системы.
+          С помощью Git каждый раз, когда вы фиксируете или сохраняете состояние своего проекта,
+          Git в основном делает снимок того, как выглядят все ваши файлы в данный момент,
+          и сохраняет ссылку на этот снимок. Чтобы быть эффективным, если файлы не изменились,
+          Git не сохраняет файл снова, а только ссылку на предыдущий идентичный файл, который он уже сохранил.
+          Git думает о своих данных больше как о потоке моментальныхснимков .
+        </p>
+        <img src="../img/snapshots.png" alt="" class="aboutHTML__img">
+        <p class="aboutHTML__text">
+          Это важное различие между Git и почти всеми другими VCSS.
+          Это заставляет Git пересмотреть почти все аспекты контроля версий,
+          которые большинство других систем скопировали из предыдущего поколения.
+          Это делает Git больше похожим на мини-файловую систему с некоторыми невероятно мощными инструментами,
+          построенными поверх нее, а не просто на VCS.
+        </p>
+        <div class="header__move">
+          <div class="course-nav">
+            <a href="Git_1.1.html">
+              <img src="../img/back_icon-icons.com_52398.png" alt="" class="header__arrow">
+            </a>
+            <p>Прошлый урок</p>
+          </div>
+
+          <div class="course-nav">
+            <p>Следующий урок</p>
+            <a href="Git_1.2.html">
+              <img src="../img/next_icon-icons.com_52398.png" alt="" class="header__arrow">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sideBar">
+      <ul class="aboutHTML__list">
+        <a href="/Git_1.0.html" class="aboutHTML__link"><li class="aboutHTML__li">О контроле верисий</li></a>
+        <a href="/Git_1.1.html" class="aboutHTML__link"><li class="aboutHTML__li">Что такое Git</li></a>
+        <a href="/Git_1.2.html" class="aboutHTML__link"><li class="aboutHTML__li">Командная строка</li></a>
+        <a href="/Git_1.3.html" class="aboutHTML__link"><li class="aboutHTML__li">Установка Git</li></a>
+        <a href="/Git_1.4.html" class="aboutHTML__link"><li class="aboutHTML__li">Первая настройка Git</li></a>
+        <a href="/Git_1.5.html" class="aboutHTML__link"><li class="aboutHTML__li">Получение репозитория Git</li></a>
+      </ul>
+    </div>
+  </div>
+  <footer class="footer__innerAccount">
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-contacts">
+          <h1 class="footer-title">Контакты</h1>
+          <div class="footer-contacts-text">
+            <p class="footer-text">Телефон: +7 (900) 622-03-82</p>
+            <p class="footer-text">E-mail: sofia.davidova999@gmail.com</p>
+          </div>
+          <div class="footer-contacts-buttons">
+            <button class="footer-message-button">
+              <img src="../img/whatsapp.svg" alt="" class="footer-message-button">
+            </button>
+            <button class="footer-message-button">
+              <img src="../img/facebook.svg" alt="" class="footer-message-button">
+            </button>
+            <button class="footer-message-button">
+              <img src="../img/instagram.svg" alt="" class="footer-message-button">
+            </button>
+          </div>
+        </div>
+        <div class="footer-question">
+          <h1 class="footer-title">Обратная связь</h1>
+          <form action="" class="form-question">
+            <div class="form-item">
+              <label for="name" class="label-input"></label>
+              <input id="name" class="form-input" type="text" name="name" required="" placeholder="Имя">
+            </div>
+            <div class="form-item">
+              <label for="email" class="label-input"></label>
+              <input id="email" class="form-input" type="text" name="email" required="" placeholder="Email">
+            </div>
+            <div class="form-item">
+              <textarea name="form-messages" id="form-messages" rows="6" placeholder="Введите ваше сообщение"></textarea>
+            </div>
+            <button class="form-button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

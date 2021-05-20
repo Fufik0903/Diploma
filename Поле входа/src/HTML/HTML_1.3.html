@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <link rel="stylesheet" href="../src/scss/style.css">
+</head>
+<body>
+<div class="general">
+  <header class="header__innerAccount">
+    <div class="header__Account">
+      <div class="header__logoAccount">
+        <a href="../aboutHTML.html">
+          <img src="../img/logo.svg" class="header__logoImg" alt="">
+        </a>
+      </div>
+      <span class="header__personalAccountTitle">Выйти</span>
+      <button class="header__enterBtn">
+        <img src="../img/Group%202people.svg" alt="">
+      </button>
+    </div>
+  </header>
+  <div class="contentPage">
+    <div class="aboutHTML">
+      <div class="aboutHTML__title"><h1>Структура</h1></div>
+      <div class="aboutHTML__content">
+        <p class="aboutHTML__text-title">
+          Структура HTML-документа
+        </p>
+        <p class="aboutHTML__text">
+          Язык HTML следует правилам, которые содержатся в файле объявления типа документа (Document Type Definition, или DTD). DTD представляет собой XML-документ, определяющий, какие теги, атрибуты и их значения действительны для конкретного типа HTML. Для каждой версии HTML есть свой DTD.<br><br>
+          DOCTYPE отвечает за корректное отображение веб-страницы браузером. DOCTYPE определяет не только версию HTML (например, html), но и соответствующий DTD-файл в Интернете.
+        </p>
+        <img src="../img/Снимок0903.PNG" alt="">
+        <p class="aboutHTML__text">
+          Элементы, находящиеся внутри элемента &lt;html>, образуют дерево документа, так называемую объектную модель документа, DOM (document object model). При этом элемент &lt;html> является корневым элементом.
+        </p>
+        <img src="../img/DOM.png" alt="">
+        <p class="aboutHTML__text">
+          Чтобы разобраться во взаимодействии элементов веб-страницы, необходимо рассмотреть так называемые «родственные отношения» между элементами. Отношения между множественными вложенными элементами подразделяются на родительские, дочерние и сестринские.<br>
+          <ol>
+            <li>Предок — элемент, который заключает в себе другие элементы. На рисунке 1 предком для всех элементов является  &lt;html>. В то же время элемент  &lt;body> является предком для всех содержащихся в нем элементов:  &lt;h1>,  &lt;p>,  &lt;span>, &lt;nav> и т.д.</li>
+            <li>Потомок — элемент, расположенный внутри одного или более типов элементов. Например, &lt;body> является потомком &lt;html>, а элемент &lt;p> является потомком одновременно для &lt;body> и &lt;html>.</li>
+            <li>Родительский элемент — элемент, связанный с другими элементами более низкого уровня, и находящийся на дереве выше их. На рисунке 1 &lt;html> является родительским только для &lt;head> и &lt;body>. Элемент &lt;p> является родительским только для &lt;span>.</li>
+            <li>Дочерний элемент — элемент, непосредственно подчиненный другому элементу более высокого уровня. На рисунке 1 только элементы &lt;h1>, &lt;h2>, &lt;p> и &lt;nav> являются дочерними по отношению к &lt;body>.</li>
+            <li>Сестринский элемент — элемент, имеющий общий родительский элемент с рассматриваемым, так называемые элементы одного уровня. На рисунке 1 &lt;head> и &lt;body> — элементы одного уровня, так же как и элементы &lt;h1>, &lt;h2> и &lt;p> являются между собой сестринскими.</li>
+          </ol>
+        </p>
+        <div class="header__move">
+          <div class="course-nav">
+            <a href="HTML_1.2.html">
+              <img src="../img/back_icon-icons.com_52398.png" alt="" class="header__arrow">
+            </a>
+            <p>Прошлый урок</p>
+          </div>
+          <div class="course-nav">
+            <p>Следующий урок</p>
+            <a href="HTML_1.4.html">
+              <img src="../img/next_icon-icons.com_52398.png" alt="" class="header__arrow">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sideBar">
+      <ul class="aboutHTML__list">
+        <a href="/HTML_1.0.html" class="aboutHTML__link"><li class="aboutHTML__li">Что такое HTML?</li></a>
+        <a href="/HTML_1.1.html" class="aboutHTML__link"><li class="aboutHTML__li">HTML теги</li></a>
+        <a href="/HTML_1.2.html" class="aboutHTML__link"><li class="aboutHTML__li">Вложенные теги</li></a>
+        <a href="/HTML_1.3.html" class="aboutHTML__link"><li class="aboutHTML__li">Структура</li></a>
+        <a href="/HTML_1.4.html" class="aboutHTML__link"><li class="aboutHTML__li">Текст/Списки/Ссылки</li></a>
+      </ul>
+    </div>
+  </div>
+  <footer class="footer__innerAccount">
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-contacts">
+          <h1 class="footer-title">Контакты</h1>
+          <div class="footer-contacts-text">
+            <p class="footer-text">Телефон: +7 (900) 622-03-82</p>
+            <p class="footer-text">E-mail: sofia.davidova999@gmail.com</p>
+          </div>
+          <div class="footer-contacts-buttons">
+            <button class="footer-message-button">
+              <img src="../img/whatsapp.svg" alt="" class="footer-message-button">
+            </button>
+            <button class="footer-message-button">
+              <img src="../img/facebook.svg" alt="" class="footer-message-button">
+            </button>
+            <button class="footer-message-button">
+              <img src="../img/instagram.svg" alt="" class="footer-message-button">
+            </button>
+          </div>
+        </div>
+        <div class="footer-question">
+          <h1 class="footer-title">Обратная связь</h1>
+          <form action="" class="form-question">
+            <div class="form-item">
+              <label for="name" class="label-input"></label>
+              <input id="name" class="form-input" type="text" name="name" required="" placeholder="Имя">
+            </div>
+            <div class="form-item">
+              <label for="email" class="label-input"></label>
+              <input id="email" class="form-input" type="text" name="email" required="" placeholder="Email">
+            </div>
+            <div class="form-item">
+              <textarea name="form-messages" id="form-messages" rows="6" placeholder="Введите ваше сообщение"></textarea>
+            </div>
+            <button class="form-button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

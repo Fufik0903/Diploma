@@ -1,0 +1,88 @@
+.footer {
+  background-image: url("../img/Group 5.svg");
+  display: flex;
+  flex-direction: column;
+  background: #051648;
+  border-top: 1px solid #a1c3ff;
+  color: white;
+  text-shadow: 1px 1px 15px #5275f5;
+  padding: 20px 30px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-title {
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+
+.footer-text {
+  padding-bottom: 20px;
+  font-size: 24px;
+}
+
+.footer-contacts {
+  width: 50%;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.footer-contacts:after {
+  content: "";
+  position: absolute;
+  border-right: 2px solid white;
+  width: 4px;
+  height: 450px;
+  top: 0;
+  right: 0;
+  box-shadow: 0px 0px 10px 0px #0a77f5;
+}
+
+.footer-message-button {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  border: none;
+  outline: none;
+  margin-right: 16px;
+  border-radius: 12px;
+}
+.footer-message-button:hover {
+  filter: contrast(200%);
+}
+
+.footer-question {
+  width: 50%;
+  text-align: center;
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 250px;
+  padding: 10px 15px;
+  border-radius: 16px;
+  font-size: 18px;
+  line-height: 1.5;
+  border: 2px solid #002eb3;
+  box-shadow: 1px 1px 10px 1px #0a77f5;
+  resize: none;
+  outline: none;
+}
+textarea:focus {
+  transition: 0.5s;
+  transform: scale(1.1);
+  border: 2px solid #578f05;
+  box-shadow: 1px 1px 10px 1px #44b703;
+}
+
+.footer-author {
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=footer.css.map */

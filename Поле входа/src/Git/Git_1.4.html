@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <link rel="stylesheet" href="../src/scss/style.css">
+</head>
+<body>
+<div class="general">
+  <header class="header__innerAccount">
+    <div class="header__Account">
+      <div class="header__logoAccount">
+        <a href="../aboutGit.html">
+          <img src="../img/logo.svg" class="header__logoImg" alt="">
+        </a>
+      </div>
+      <span class="header__personalAccountTitle">Выйти</span>
+      <button class="header__enterBtn">
+        <img src="../img/Group%202people.svg" alt="">
+      </button>
+    </div>
+  </header>
+  <div class="contentPage">
+    <div class="aboutHTML">
+      <div class="aboutHTML__title"><h1>Первая настройка Git</h1></div>
+      <div class="aboutHTML__content">
+        <p class="aboutHTML__text">
+          Теперь, когда у вас есть Git в вашей системе, вы захотите сделать несколько вещей, чтобы настроить свою среду Git.
+          Вы должны делать эти вещи только один раз на любом данном компьютере; они будут оставаться между обновлениями.
+          Вы также можете изменить их в любое время, снова запустив эти команды.
+        </p>
+        <p class="aboutHTML__text">
+          Git поставляется с инструментом под названием git config, который позволяет вам получать и устанавливать
+          переменные конфигурации, которые управляют всеми аспектами того, как Git выглядит и работает.
+          Эти переменные могут храниться в трех разных местах:
+        </p>
+        <ol>
+          <li>[path]/etc/gitconfig файл: Содержит значения, применяемые к каждому пользователю системы и всем их репозиториям. Если вы передадите эту опцию --systemgit configкому-то , то он будет читать и записывать именно из этого файла. Поскольку это файл конфигурации системы, вам понадобятся права администратора или суперпользователя, чтобы внести в него изменения.</li>
+          <li>~/.gitconfig или ~/.config/git/configфайл: Значения, определенные лично для вас, пользователя. Вы можете заставить Git специально читать и записывать этот файл, передав эту --globalопцию, и это повлияет на все репозитории, с которыми вы работаете в вашей системе.</li>
+          <li>config файл в каталоге Git (то есть .git/config) любого репозитория, который вы в настоящее время используете: Специфичный для этого одного репозитория. Вы можете заставить Git читать и записывать в этот файл с --localпомощью опции, но это фактически по умолчанию. Неудивительно, что вам нужно находиться где-то в репозитории Git, чтобы эта опция работала правильно.</li>
+        </ol>
+        <p class="aboutHTML__text">
+          Каждый уровень переопределяет значения на предыдущем уровне, так что значения в .git/configкозыре те,
+          что внутри [path]/etc/gitconfig.
+        </p>
+        <p class="aboutHTML__text">
+          Каждый уровень переопределяет значения на предыдущем уровне, так что значения в .git/configкозыре те,
+          что внутри [path]/etc/gitconfig.
+        </p>
+        <p class="aboutHTML__text">
+          В системах Windows Git ищет .gitconfig файл в $HOME каталоге (C:\Users\$USER для большинства людей).
+          Он также по-прежнему ищет [path]/etc/gitconfig, хотя и относительно корня MSys, который находится там,
+          где вы решите установить Git в своей системе Windows при запуске установщика. Если вы используете версию 2-x
+          или более позднюю версию Git для Windows, существует также конфигурационный файл системного уровня
+          C:\Documents and Settings\All Users\Application Data\Git\configв Windows XP и в
+          C:\ProgramData\Git\configWindows Vista и новее. Этот конфигурационный файл может быть изменен git config -f
+          &lt;file>только администратором.
+        </p>
+        <p class="aboutHTML__text">
+          Вы можете просмотреть все свои настройки и откуда они берутся с помощью: $ git config --list --show-origin
+        </p>
+        <p class="aboutHTML__text-title">
+          Ваша Личность
+        </p>
+        <p class="aboutHTML__text">
+          Первое, что вы должны сделать при установке Git, - это установить свое имя пользователя и адрес электронной почты.
+          Это важно, потому что каждый Git-коммит использует эту информацию, и она неизменно запекается в коммитах,
+          которые вы начинаете создавать:
+        </p>
+        <p class="aboutHTML__text">
+          $ git config --global user.name "John Doe"
+        </p>
+        <p class="aboutHTML__text">
+          $ git config --global user.email johndoe@example.com
+        </p>
+        <p class="aboutHTML__text">
+          Опять же, вам нужно сделать это только один раз, если вы передадите --globalопцию,
+          потому что тогда Git всегда будет использовать эту информацию для всего, что вы делаете в этой системе.
+          Если вы хотите переопределить это с другим именем или адресом электронной почты для конкретных проектов,
+          вы можете запустить команду без --globalопции, когда вы находитесь в этом проекте.
+        </p>
+        <p class="aboutHTML__text-title">
+          Ваш редактор
+        </p>
+        <p class="aboutHTML__text">
+          Теперь, когда ваша личность настроена, вы можете настроить текстовый редактор по умолчанию,
+          который будет использоваться, когда Git потребует, чтобы вы ввели сообщение.
+          Если он не настроен, Git использует редактор вашей системы по умолчанию.
+        </p>
+        <p class="aboutHTML__text">
+          Если вы хотите использовать другой текстовый редактор, например Emacs, вы можете сделать следующее:
+        </p>
+        <p class="aboutHTML__text">
+          $ git config --global core.editor emacs
+        </p>
+        <p class="aboutHTML__text">
+          В системе Windows, если вы хотите использовать другой текстовый редактор,
+          вы должны указать полный путь к его исполняемому файлу. Это может быть по-разному в зависимости от того,
+          как упакован ваш редактор.
+        </p>
+        <p class="aboutHTML__text">
+          В случае Notepad++, популярного редактора программирования, вы, скорее всего,
+          захотите использовать 32-разрядную версию, поскольку на момент написания статьи
+          64-разрядная версия не поддерживает все плагины. Если вы находитесь в 32-разрядной системе Windows
+          или у вас есть 64-разрядный редактор в 64-разрядной системе, вы наберете что-то вроде этого:
+        </p>
+        <p class="aboutHTML__text">
+          $ git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
+        </p>
+        <p class="aboutHTML__text-title">
+          Имя филиала по умолчанию
+        </p>
+        <p class="aboutHTML__text">
+          По умолчанию Git создаст ветвь с именем master при создании нового репозитория git init.
+          Начиная с версии Git 2.28 и далее, вы можете установить другое имя для начальной ветви.
+        </p>
+        <p class="aboutHTML__text">
+          Чтобы установить main в качестве имени ветви по умолчанию выполните следующие действия:
+        </p>
+        <p class="aboutHTML__text">
+          $ git config --global init.defaultBranch main
+        </p>
+        <p class="aboutHTML__text-title">
+          Проверка Ваших Настроек
+        </p>
+        <p class="aboutHTML__text">
+          Если вы хотите проверить свои настройки конфигурации, вы можете использовать эту git config --list команду,
+          чтобы перечислить все настройки, которые Git может найти в этот момент:
+        </p>
+        <img src="../img/Снимок4.PNG" alt="" class="aboutHTML__img">
+        <p class="aboutHTML__text">
+          Вы можете видеть ключи несколько раз, потому что Git читает один и тот же ключ из разных файлов
+          ([path]/etc/gitconfig и ~/.gitconfig, например).
+          В этом случае Git использует последнее значение для каждого уникального ключа, который он видит.
+        </p>
+        <p class="aboutHTML__text">
+          Вы также можете проверить, что Git думает о значении конкретного ключа, набравgit config &lt;key>:
+        </p>
+        <p class="aboutHTML__text">
+          $ git config user.name
+          <br>
+          John Doe
+        </p>
+        <div class="header__move">
+          <div class="course-nav">
+            <a href="Git_1.3.html">
+              <img src="../img/back_icon-icons.com_52398.png" alt="" class="header__arrow">
+            </a>
+            <p>Прошлый урок</p>
+          </div>
+
+          <div class="course-nav">
+            <p>Следующий урок</p>
+            <a href="Git_1.5.html">
+              <img src="../img/next_icon-icons.com_52398.png" alt="" class="header__arrow">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sideBar">
+      <ul class="aboutHTML__list">
+        <a href="/Git_1.0.html" class="aboutHTML__link"><li class="aboutHTML__li">О контроле верисий</li></a>
+        <a href="/Git_1.1.html" class="aboutHTML__link"><li class="aboutHTML__li">Что такое Git</li></a>
+        <a href="/Git_1.2.html" class="aboutHTML__link"><li class="aboutHTML__li">Командная строка</li></a>
+        <a href="/Git_1.3.html" class="aboutHTML__link"><li class="aboutHTML__li">Установка Git</li></a>
+        <a href="/Git_1.4.html" class="aboutHTML__link"><li class="aboutHTML__li">Первая настройка Git</li></a>
+        <a href="/Git_1.5.html" class="aboutHTML__link"><li class="aboutHTML__li">Получение репозитория Git</li></a>
+      </ul>
+    </div>
+  </div>
+  <footer class="footer__innerAccount">
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-contacts">
+          <h1 class="footer-title">Контакты</h1>
+          <div class="footer-contacts-text">
+            <p class="footer-text">Телефон: +7 (900) 622-03-82</p>
+            <p class="footer-text">E-mail: sofia.davidova999@gmail.com</p>
+          </div>
+          <div class="footer-contacts-buttons">
+            <button class="footer-message-button">
+              <img src="../img/whatsapp.svg" alt="" class="footer-message-button">
+            </button>
+            <button class="footer-message-button">
+              <img src="../img/facebook.svg" alt="" class="footer-message-button">
+            </button>
+            <button class="footer-message-button">
+              <img src="../img/instagram.svg" alt="" class="footer-message-button">
+            </button>
+          </div>
+        </div>
+        <div class="footer-question">
+          <h1 class="footer-title">Обратная связь</h1>
+          <form action="" class="form-question">
+            <div class="form-item">
+              <label for="name" class="label-input"></label>
+              <input id="name" class="form-input" type="text" name="name" required="" placeholder="Имя">
+            </div>
+            <div class="form-item">
+              <label for="email" class="label-input"></label>
+              <input id="email" class="form-input" type="text" name="email" required="" placeholder="Email">
+            </div>
+            <div class="form-item">
+              <textarea name="form-messages" id="form-messages" rows="6" placeholder="Введите ваше сообщение"></textarea>
+            </div>
+            <button class="form-button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bf390e71-f0c2-412b-9149-53d9d8e35585" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Sass File" />
+        <option value="SCSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1sd8YwTX8ognG4n0kzChkSERASR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sofia\OneDrive\Рабочий стол\Поле входа\src\HTML" />
+      <recent name="C:\Users\sofia\OneDrive\Рабочий стол\Поле входа\src" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bf390e71-f0c2-412b-9149-53d9d8e35585" name="Default Changelist" comment="" />
+      <created>1621191157158</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1621191157158</updated>
+      <workItem from="1621191158294" duration="6861000" />
+      <workItem from="1621230469223" duration="13110000" />
+      <workItem from="1621250542402" duration="6532000" />
+      <workItem from="1621261257765" duration="13297000" />
+      <workItem from="1621321711092" duration="19952000" />
+      <workItem from="1621413862249" duration="28416000" />
+      <workItem from="1621452860108" duration="834000" />
+      <workItem from="1621509594324" duration="6209000" />
+      <workItem from="1621518706640" duration="804000" />
+      <workItem from="1621520034266" duration="423000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="0" width="497" height="680" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1621322958913">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="0" y="0" width="497" height="680" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1621322958913" />
+    <state x="-1363" y="133" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1621515221163">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1363" y="133" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1621515221163" />
+    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1621434314838" />
+    <state x="419" y="194" key="EditFileWatcherDialog" timestamp="1621236683349">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="-1291" y="297" key="EditFileWatcherDialog/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1621191209313" />
+    <state x="419" y="194" key="EditFileWatcherDialog/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1621236683349" />
+    <state x="301" y="154" key="run.anything.popup" timestamp="1621437435726">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="301" y="154" key="run.anything.popup/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1621437435726" />
+    <state x="-1452" y="17" width="1008" height="1037" key="search.everywhere.popup" timestamp="1621512998140">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1452" y="17" width="1008" height="1037" key="search.everywhere.popup/0.0.1280.680/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1621512998140" />
+    <state x="312" y="11" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/-1920.0.1920.1040@0.0.1280.680" timestamp="1621511495078" />
+  </component>
+</project>

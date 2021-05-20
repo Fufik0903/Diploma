@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <link rel="stylesheet" href="../src/scss/style.css">
+</head>
+<body>
+<div class="general">
+  <header class="header__innerAccount">
+    <div class="header__Account">
+      <div class="header__logoAccount">
+        <a href="../aboutJavaScript.html">
+          <img src="../img/logo.svg" class="header__logoImg" alt="">
+        </a>
+      </div>
+      <span class="header__personalAccountTitle">Выйти</span>
+      <button class="header__enterBtn">
+        <img src="../img/Group%202people.svg" alt="">
+      </button>
+    </div>
+  </header>
+  <div class="contentPage">
+    <div class="aboutHTML">
+      <div class="aboutHTML__title"><h1>Структура кода</h1></div>
+      <div class="aboutHTML__content">
+        <p class="aboutHTML__text">
+          Начнём изучение языка с рассмотрения основных «строительных блоков» кода.
+        </p>
+        <p class="aboutHTML__text-title">
+          Инструкции
+        </p>
+        <p class="aboutHTML__text">
+          Инструкции – это синтаксические конструкции и команды, которые выполняют действия.<br>
+          Мы уже видели инструкцию alert('Привет, мир!'), которая отображает сообщение «Привет, мир!».<br>
+          В нашем коде может быть столько инструкций, сколько мы захотим. Инструкции могут отделяться точкой с запятой.<br>
+          Например, здесь мы разделили сообщение «Привет Мир» на два вызова alert:
+        </p>
+        <img src="../img/Снимок1.8.0..PNG" alt="" class="aboutHTML__img">
+        <p class="aboutHTML__text">
+          Обычно каждую инструкцию пишут на новой строке, чтобы код было легче читать:
+        </p>
+        <img src="../img/Снимок1.8.1.PNG" alt="" class="aboutHTML__img">
+        <p class="aboutHTML__text-title">
+          Точка с запятой
+        </p>
+        <p class="aboutHTML__text">
+          В большинстве случаев точку с запятой можно не ставить, если есть переход на новую строку.<br>
+          Так тоже будет работать:
+        </p>
+        <img src="../img/Снимок1.8.2.PNG" alt="" class="aboutHTML__img">
+        <p class="aboutHTML__text">
+          В этом случае JavaScript интерпретирует перенос строки как «неявную» точку с запятой. Это называется автоматическая вставка точки с запятой.<br>
+          В большинстве случаев новая строка подразумевает точку с запятой. Но «в большинстве случаев» не значит «всегда»!<br>
+          В некоторых ситуациях новая строка всё же не означает точку с запятой. Например:
+        </p>
+        <img src="../img/Снимок1.8.3.PNG" alt="" class="aboutHTML__img">
+        <p class="aboutHTML__text">
+          Код выведет 6, потому что JavaScript не вставляет здесь точку с запятой. Интуитивно очевидно, что, если строка заканчивается знаком "+", значит, это «незавершённое выражение», поэтому точка с запятой не требуется. И в этом случае всё работает, как задумано.<br>
+          Но есть ситуации, где JavaScript «забывает» вставить точку с запятой там, где она нужна.<br>
+          Ошибки, которые при этом появляются, достаточно сложно обнаруживать и исправлять.
+        </p>
+        <p class="aboutHTML__text-title">
+          Комментарии
+        </p>
+        <p class="aboutHTML__text">
+          Со временем программы становятся всё сложнее и сложнее. Возникает необходимость добавлять комментарии, которые бы описывали, что делает код и почему.<br>
+          Комментарии могут находиться в любом месте скрипта. Они не влияют на его выполнение, поскольку движок просто игнорирует их.<br>
+          Однострочные комментарии начинаются с двойной косой черты //.<br>
+          Часть строки после // считается комментарием. Такой комментарий может как занимать строку целиком, так и находиться после инструкции.<br>
+          Как здесь:
+        </p>
+        <img src="../img/Снимок1.8.4.PNG" alt="" class="aboutHTML__img">
+        <p class="aboutHTML__text">
+          Многострочные комментарии начинаются косой чертой со звёздочкой /* и заканчиваются звёздочкой с косой чертой */.<br>
+          Как вот здесь:
+        </p>
+        <img src="../img/Снимок1.8.5.PNG" alt="" class="aboutHTML__img">
+        <p class="aboutHTML__text">
+          Содержимое комментария игнорируется, поэтому, если мы поместим код внутри /* … */, он не будет исполняться.<br>
+          Это бывает удобно для временного отключения участка кода:
+        </p>
+        <img src="../img/Снимок1.8.6.PNG" alt="" class="aboutHTML__img">
+        <div class="header__move">
+          <div class="course-nav">
+            <a href="JS_1.0.html">
+              <img src="../img/back_icon-icons.com_52398.png" alt="" class="header__arrow">
+            </a>
+            <p>Прошлый урок</p>
+          </div>
+
+          <div class="course-nav">
+            <p>Следующий урок</p>
+            <a href="JS_1.2.html">
+              <img src="../img/next_icon-icons.com_52398.png" alt="" class="header__arrow">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sideBar">
+      <ul class="aboutHTML__list">
+        <a href="/JS_1.0.html" class="aboutHTML__link"><li class="aboutHTML__li">Hello World!</li></a>
+        <a href="/JS_1.1.html" class="aboutHTML__link"><li class="aboutHTML__li">Структура кода</li></a>
+        <a href="/JS_1.2.html" class="aboutHTML__link"><li class="aboutHTML__li">Строгий режимм "use strict"</li></a>
+        <a href="/JS_1.3.html" class="aboutHTML__link"><li class="aboutHTML__li">Переменные</li></a>
+        <a href="/JS_1.4.html" class="aboutHTML__link"><li class="aboutHTML__li">Типы данных</li></a>
+        <a href="/JS_1.5.html" class="aboutHTML__link"><li class="aboutHTML__li">Преобразование типов</li></a>
+      </ul>
+    </div>
+  </div>
+  <footer class="footer__innerAccount">
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-contacts">
+          <h1 class="footer-title">Контакты</h1>
+          <div class="footer-contacts-text">
+            <p class="footer-text">Телефон: +7 (900) 622-03-82</p>
+            <p class="footer-text">E-mail: sofia.davidova999@gmail.com</p>
+          </div>
+          <div class="footer-contacts-buttons">
+            <button class="footer-message-button">
+              <img src="../img/whatsapp.svg" alt="" class="footer-message-button">
+            </button>
+            <button class="footer-message-button">
+              <img src="../img/facebook.svg" alt="" class="footer-message-button">
+            </button>
+            <button class="footer-message-button">
+              <img src="../img/instagram.svg" alt="" class="footer-message-button">
+            </button>
+          </div>
+        </div>
+        <div class="footer-question">
+          <h1 class="footer-title">Обратная связь</h1>
+          <form action="" class="form-question">
+            <div class="form-item">
+              <label for="name" class="label-input"></label>
+              <input id="name" class="form-input" type="text" name="name" required="" placeholder="Имя">
+            </div>
+            <div class="form-item">
+              <label for="email" class="label-input"></label>
+              <input id="email" class="form-input" type="text" name="email" required="" placeholder="Email">
+            </div>
+            <div class="form-item">
+              <textarea name="form-messages" id="form-messages" rows="6" placeholder="Введите ваше сообщение"></textarea>
+            </div>
+            <button class="form-button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

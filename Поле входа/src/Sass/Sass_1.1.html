@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <link rel="stylesheet" href="../src/scss/style.css">
+</head>
+<body>
+<div class="general">
+  <header class="header__innerAccount">
+    <div class="header__Account">
+      <div class="header__logoAccount">
+        <a href="../aboutSass.html">
+          <img src="../img/logo.svg" class="header__logoImg" alt="">
+        </a>
+      </div>
+      <span class="header__personalAccountTitle">Выйти</span>
+      <button class="header__enterBtn">
+        <img src="../img/Group%202people.svg" alt="">
+      </button>
+    </div>
+  </header>
+  <div class="contentPage">
+    <div class="aboutHTML">
+      <div class="aboutHTML__title"><h1>Вложенности/Фрагментирование</h1></div>
+      <div class="aboutHTML__content">
+        <p class="aboutHTML__text">
+          При написании HTML, Вы, наверное, заметили, что он имеет четкую вложенную и визуальную иерархию. С CSS это не так.
+        </p>
+        <p class="aboutHTML__text">
+          Sass позволит вам вкладывать CSS селекторы таким же образом, как и в визуальной иерархии HTML. Но помните, что чрезмерное количество вложенностей делает ваш документ менее читабельным и воспринимаемым, что считается плохой практикой.
+        </p>
+        <p class="aboutHTML__text">
+          Чтобы понять что мы имеем ввиду, приведем типичный пример стилей навигации на сайте:
+        </p>
+        <img src="../img/Снимок1.6.1.PNG" alt="" class="aboutHTML__img">
+        <p class="aboutHTML__text">
+          Вы заметили, что селекторы ul, li, и a являются вложенными в селектор nav? Это отличный способ сделать ваш CSS-файл более читабельным. Когда вы сгенерируете CSS-файл, то на выходе вы получите что-то вроде этого:
+        </p>
+        <p class="aboutHTML__text-title">
+          Фрагментирование
+        </p>
+        <p class="aboutHTML__text">
+          Вы можете создавать фрагменты Sass-файла, которые будут содержать в себе небольшие отрывки CSS, которые можно будет использовать в других Sass-файлах. Это отличный способ сделать ваш CSS модульным, а также облегчить его обслуживание. Фрагмент — это простой Sass-файл, имя которого начинается с нижнего подчеркивания, например, _partial.scss. Нижнее подчеркивание в имени Sass-файла говорит компилятору о том, что это только фрагмент и он не должен компилироваться в CSS. Фрагменты Sass подключаются при помощи директивы @import.
+        </p>
+        <div class="header__move">
+          <div class="course-nav">
+            <a href="Sass_1.0.html">
+              <img src="../img/back_icon-icons.com_52398.png" alt="" class="header__arrow">
+            </a>
+            <p>Прошлый урок</p>
+          </div>
+          <div class="course-nav">
+            <p>Следующий урок</p>
+            <a href="Sass_1.3.html">
+              <img src="../img/next_icon-icons.com_52398.png" alt="" class="header__arrow">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sideBar">
+      <ul class="aboutHTML__list">
+        <a href="/Sass_1.0.html" class="aboutHTML__link"><li class="aboutHTML__li">Переменные</li></a>
+        <a href="/Sass_1.1.html" class="aboutHTML__link"><li class="aboutHTML__li">Вложенности/Фрагментирование</li></a>
+        <a href="/Sass_1.3.html" class="aboutHTML__link"><li class="aboutHTML__li">Импорт</li></a>
+        <a href="/Sass_1.4.html" class="aboutHTML__link"><li class="aboutHTML__li">Миксины(примеси)</li></a>
+        <a href="/Sass_1.5.html" class="aboutHTML__link"><li class="aboutHTML__li">Расширение/Наследование</li></a>
+        <a href="/Sass_1.6.html" class="aboutHTML__link"><li class="aboutHTML__li">Математические операторы</li></a>
+      </ul>
+    </div>
+  </div>
+  <footer class="footer__innerAccount">
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-contacts">
+          <h1 class="footer-title">Контакты</h1>
+          <div class="footer-contacts-text">
+            <p class="footer-text">Телефон: +7 (900) 622-03-82</p>
+            <p class="footer-text">E-mail: sofia.davidova999@gmail.com</p>
+          </div>
+          <div class="footer-contacts-buttons">
+            <button class="footer-message-button">
+              <img src="../img/whatsapp.svg" alt="" class="footer-message-button">
+            </button>
+            <button class="footer-message-button">
+              <img src="../img/facebook.svg" alt="" class="footer-message-button">
+            </button>
+            <button class="footer-message-button">
+              <img src="../img/instagram.svg" alt="" class="footer-message-button">
+            </button>
+          </div>
+        </div>
+        <div class="footer-question">
+          <h1 class="footer-title">Обратная связь</h1>
+          <form action="" class="form-question">
+            <div class="form-item">
+              <label for="name" class="label-input"></label>
+              <input id="name" class="form-input" type="text" name="name" required="" placeholder="Имя">
+            </div>
+            <div class="form-item">
+              <label for="email" class="label-input"></label>
+              <input id="email" class="form-input" type="text" name="email" required="" placeholder="Email">
+            </div>
+            <div class="form-item">
+              <textarea name="form-messages" id="form-messages" rows="6" placeholder="Введите ваше сообщение"></textarea>
+            </div>
+            <button class="form-button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
